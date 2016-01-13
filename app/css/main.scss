@@ -8,6 +8,10 @@ header {
   background-color: rgba(#000000, 0.6);
 }
 
+.hide {
+  display:none;
+}
+
 .headerText {
     text-align: center;
     font-size: 12em;
@@ -18,17 +22,46 @@ header {
   }
 }
 
+#experience {
+  display:inline-block;
+  h2 {
+    color:white;
+    font-family: $font-subheader;
+    align-self: flex-start;
+
+  }
+
+}
+
+#work {
+  h2 {
+    color:white;
+    font-family: $font-subheader;
+  }
+
+}
+
+#interests {
+  h2 {
+    color:white;
+    font-family: $font-subheader;
+  }
+
+}
+
 
 .section {
   width:auto;
   margin-left: 20%;
   display:block;
   margin-bottom: 5%;
+  background-color: rgba(#000000, 0.9);
+
 
   .name {
+    position:absolute;
     font-size: 8em;
     color:rgba(#bab9b9, 0);
-    position:relative;
     letter-spacing: 70px;
     width:auto;
     z-index: -1;

@@ -4,6 +4,9 @@ body {
 header {
   background-color: rgba(0, 0, 0, 0.6); }
 
+.hide {
+  display: none; }
+
 .headerText {
   text-align: center;
   font-size: 12em;
@@ -12,15 +15,31 @@ header {
   .headerText .initials {
     position: relative; }
 
+#experience {
+  display: inline-block; }
+  #experience h2 {
+    color: white;
+    font-family: "Fugaz One", cursive;
+    align-self: flex-start; }
+
+#work h2 {
+  color: white;
+  font-family: "Fugaz One", cursive; }
+
+#interests h2 {
+  color: white;
+  font-family: "Fugaz One", cursive; }
+
 .section {
   width: auto;
   margin-left: 20%;
   display: block;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.9); }
   .section .name {
+    position: absolute;
     font-size: 8em;
     color: rgba(186, 185, 185, 0);
-    position: relative;
     letter-spacing: 70px;
     width: auto;
     z-index: -1; }
