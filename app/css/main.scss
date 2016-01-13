@@ -1,0 +1,36 @@
+$font-header: "Raleway", sans-serif;
+$font-subheader: "Fugaz One", cursive;
+body {
+  width:auto;
+}
+
+header {
+  background-color: rgba(#000000, 0.6);
+}
+
+.headerText {
+    text-align: center;
+    font-size: 12em;
+    font-family: $font-header;
+    margin-top: 0;
+  .initials {
+    position:relative;
+  }
+}
+
+
+.section {
+  width:auto;
+  margin-left: 20%;
+  display:block;
+  margin-bottom: 5%;
+
+  .name {
+    font-size: 8em;
+    color:rgba(#bab9b9, 0);
+    position:relative;
+    letter-spacing: 70px;
+    width:auto;
+    z-index: -1;
+  }
+}

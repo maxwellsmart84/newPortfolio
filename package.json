@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for Maxwell Krause",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass app/css/main.scss app/css/main.css -w"
+  },
+  "author": "Maxwell Krause",
+  "license": "ISC"
+}
