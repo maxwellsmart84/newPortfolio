@@ -1,16 +1,25 @@
 $font-header: "Raleway", sans-serif;
 $font-subheader: "Fugaz One", cursive;
 body {
-  width:auto;
+  width:100%;
 }
 
 ul{
   display: inline-block;
 }
-
-header {
-  background-color: rgba(#000000, 0.6);
+.sectionHead {
+  margin-top: 0;
+  margin-bottom: 40px;
+  border-bottom: double white 5px 2px;
 }
+.headerBar {
+  background-color: rgba(#000000, 0.6);
+  i {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
 
 .hide {
   display:none;
@@ -27,15 +36,21 @@ header {
   }
 }
 
+#allCarousels{
+  position: relative;
+  bottom:20vh;
+}
 .section {
-  width:auto;
+  width:0;
   margin-left: 15%;
   display:block;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   background-color: rgba(#000000, 0.9);
   padding:1% 3% 3% 3%;
+  height:200px;
 
 }
+
 #experience {
   h2 {
     color:white;
@@ -57,12 +72,19 @@ header {
     font-family: $font-subheader;
   }
 }
-
-.name {
-  position:absolute;
-  font-size: 8em;
-  color:rgba(#bab9b9, 0);
-  letter-spacing: 40px;
+.restOfName {
   width:auto;
+  margin-left: 15%;
+  margin-bottom: 5%;
   z-index: -1;
+  position:absolute;
+
+  .name {
+    position:absolute;
+    font-size: 8em;
+    color:rgba(#bab9b9, 0);
+    letter-spacing: 30px;
+    width:auto;
+    z-index: -1;
+  }
 }

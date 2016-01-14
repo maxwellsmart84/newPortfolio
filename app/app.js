@@ -10,7 +10,6 @@ var page = {
 
   initEvents: function(){
     page.triggerInitAnim();
-    page.carouselStart();
   },
 
   carouselStart: function (){
@@ -18,13 +17,25 @@ var page = {
   },
 
    initialAnim: function (){
-     var tl = new TimelineLite ();
-     tl.to ("#headerInit", 0, {height:"13vh"});
-     tl.to("#M", 1, {right:"33%", top:"8.5vh"});
-     tl.to("#L", 1, {right:"45%", top:"38vh"});
-     tl.to("#K", 1, {right:"52.5%", top:"62.5vh"});
-     tl.to(".name", 4, {color: "#bab9b9", opacity: 0.66});
-     tl.to(".name", 2, {letterSpacing:"70px", color: "#bab9b9", opacity: 0});
+     var tl = new TimelineMax ();
+     tl.to("#M", 1, {right:"35%", top:"11vh"});
+     tl.to(".headerBar", 0.5, {height:"13vh", backgroundColor: "rgba(#000000, 0.6"}, 0);
+     tl.to("#L", 1, {right:"45%", top:"49vh"});
+     tl.to("#K", 1, {right: "52.5%", top: "79vh"});
+     tl.to(".name", 3.5, {color: "#bab9b9", opacity: 0.66});
+     tl.to(".name", 1.5, {letterSpacing:"80px", color: "#bab9b9", opacity: 0});
+     tl.to(".section", 1, {width:"100%"}, 10);
+     tl.addCallback(page.removeHiddenSec, 9);
+     tl.addCallback(page.removeHiddenInd, 10);
+     tl.addCallback(page.carouselStart);
+   },
+
+   removeHiddenSec: function (){
+   $(".section").removeClass("hidden");
+   },
+
+   removeHiddenInd: function(){
+     $(".section").removeClass("hidden");
    },
 
     triggerInitAnim: function (){
