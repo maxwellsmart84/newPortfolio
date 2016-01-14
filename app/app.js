@@ -1,28 +1,35 @@
 
-$(document).ready();
+$(document).ready(function (){
+  page.init();
+});
 
-// var initialAnim = function (){
-//    TweenMax.to("#M", 2, {right:"37%", top:"15vh"});
-//    TweenMax.to("#L", 2, {right:"50%", top:"40vh", delay:0.5},1);
-//    TweenMax.to("#K", 2, {right:"59%", top:"65vh", delay:1},1);
-//  };
+var page = {
+  init: function (){
+    page.initEvents();
+  },
 
+  initEvents: function(){
+    page.triggerInitAnim();
+    page.carouselStart();
+  },
 
-var tl = new TimelineLite ();
-var endAnimation = function (){
-  TweenMax.to(".name", 3, {color: "#fff", opacity:0});
+  carouselStart: function (){
+    $(".carousel").carousel();
+  },
+
+   initialAnim: function (){
+     var tl = new TimelineLite ();
+     tl.to ("#headerInit", 0, {height:"13vh"});
+     tl.to("#M", 1, {right:"33%", top:"8.5vh"});
+     tl.to("#L", 1, {right:"45%", top:"38vh"});
+     tl.to("#K", 1, {right:"52.5%", top:"62.5vh"});
+     tl.to(".name", 4, {color: "#bab9b9", opacity: 0.66});
+     tl.to(".name", 2, {letterSpacing:"70px", color: "#bab9b9", opacity: 0});
+   },
+
+    triggerInitAnim: function (){
+     $("#headerInit").on ("click", function (event){
+     page.initialAnim();
+   });
+  }
 };
-
-var initialAnim = function (){
-   tl.to (".headerText", 0, {height:"13vh"});
-   tl.to("#M", 1, {right:"33%", top:"8.5vh"});
-   tl.to("#L", 1, {right:"45%", top:"38vh"});
-   tl.to("#K", 1, {right:"52.5%", top:"62.5vh"});
-   tl.to(".name", 4, {color: "#bab9b9", opacity: 0.66});
-   tl.to(".name", 4, {color: "#bab9b9", opacity: 0});
-
- };
-
- $(".headerText").on ("click", function (event){
-   initialAnim();
- });
