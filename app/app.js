@@ -13,18 +13,20 @@ var page = {
   },
 
   carouselStart: function (){
-    $(".carousel").carousel();
+    $(".carousel").carousel({
+      interval: 8000
+    });
   },
 
    initialAnim: function (){
      var tl = new TimelineMax ();
-     tl.to("#M", 1, {right:"35%", top:"11vh"});
+     tl.to("#M", 1, {right:"35%", top:"60px"});
      tl.to(".headerBar", 0.5, {height:"13vh", backgroundColor: "rgba(#000000, 0.6"}, 0);
-     tl.to("#L", 1, {right:"45%", top:"49vh"});
-     tl.to("#K", 1, {right: "52.5%", top: "79vh"});
+     tl.to("#L", 1, {right:"45%", top:"285px"});
+     tl.to("#K", 1, {right: "53.5%", top: "520px"});
      tl.to(".name", 3.5, {color: "#bab9b9", opacity: 0.66});
      tl.to(".name", 1.5, {letterSpacing:"80px", color: "#bab9b9", opacity: 0});
-     tl.to(".section", 1, {width:"100%"}, 10);
+     tl.to(".section", 1, {width:"80%"}, 10);
      tl.addCallback(page.removeHiddenSec, 9);
      tl.addCallback(page.removeHiddenInd, 10);
      tl.addCallback(page.carouselStart);
@@ -33,6 +35,7 @@ var page = {
    removeHiddenSec: function (){
    $(".section").removeClass("hidden");
    },
+
 
    removeHiddenInd: function(){
      $(".section").removeClass("hidden");

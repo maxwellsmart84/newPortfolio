@@ -2,6 +2,7 @@ $font-header: "Raleway", sans-serif;
 $font-subheader: "Fugaz One", cursive;
 body {
   width:100%;
+  height:auto;
 }
 
 ul{
@@ -17,6 +18,7 @@ ul{
   i {
     display: inline-block;
     text-align: center;
+    color:white;
   }
 }
 
@@ -28,6 +30,7 @@ ul{
 #headerInit {
   text-align: center;
   display: block;
+  height:200px;
   .initials {
     font-size: 12em;
     font-family: $font-header;
@@ -44,14 +47,22 @@ ul{
   width:0;
   margin-left: 15%;
   display:block;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   background-color: rgba(#000000, 0.9);
   padding:1% 3% 3% 3%;
   height:200px;
+  border-radius: 20px;
 
 }
 
+.carousel-control{
+  border-radius: 20px;
+}
+
 #experience {
+  .item {
+
+  }
   h2 {
     color:white;
     font-family: $font-subheader;
@@ -59,6 +70,9 @@ ul{
 }
 
 #work {
+  .item {
+
+  }
   h2 {
     color:white;
     font-family: $font-subheader;
@@ -67,24 +81,31 @@ ul{
 }
 
 #interests {
+  .item {
+
+  }
   h2 {
     color:white;
     font-family: $font-subheader;
   }
 }
-.restOfName {
-  width:auto;
-  margin-left: 15%;
-  margin-bottom: 5%;
-  z-index: -1;
-  position:absolute;
-
-  .name {
+.name {
+    width:auto;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    z-index: -1;
     position:absolute;
     font-size: 8em;
     color:rgba(#bab9b9, 0);
     letter-spacing: 30px;
-    width:auto;
-    z-index: -1;
-  }
+}
+
+#max {
+  top:180px;
+}
+#lyle {
+  top:420px;
+}
+#krause {
+  top:660px;
 }
