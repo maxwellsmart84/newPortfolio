@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "description": "Portfolio for Maxwell Krause",
+  "main": "app.js",
+  "authors": [
+    "Maxwell Krause"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/maxwellsmart84/newPortfolio",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "gsap": "~1.18.2",
+    "font-awesome": "~4.5.0"
+  }
+}

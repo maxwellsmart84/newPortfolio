@@ -2,11 +2,27 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio for Maxwell Krause",
-  "main": "app.js",
+  "main": "server.js",
+  "dependencies": {
+    "bower": "^1.6.9",
+    "express": "^4.13.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass app/css/main.scss app/css/main.css -w"
+    "sass": "node-sass app/css/main.scss app/css/main.css -w",
+    "start": "node server.js",
+    "postinstall":"bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxwellsmart84/newPortfolio/newPortfolio.git"
   },
   "author": "Maxwell Krause",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crowdless-app/crowdless-website/issues"
+  },
+  "keywords": [
+    "portfolio"
+  ],
 }
