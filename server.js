@@ -12,9 +12,7 @@ app.get('/', function(request, response, next){
   response.sendFile('app');
 });
 
-// app.get('/thingy', function (req, res){
-//   res.send('<h2>Another Thing</h2>');
-// });
+
 
 
 http.listen(port);
