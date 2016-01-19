@@ -1,5 +1,7 @@
 $font-header: "Raleway", sans-serif;
 $font-subheader: "Fugaz One", cursive;
+
+
 body {
   width:100%;
 }
@@ -12,11 +14,12 @@ ul{
 .headerBar {
   background-color: rgba(#000000, 0.6);
   display: flex;
-  text-align: center;
   height:0;
   i {
     color:rgba(#ffffff, 0);
     padding:10px;
+    text-align: center;
+
   }
 }
 
@@ -53,7 +56,15 @@ ul{
 }
 
 .carousel-indicators {
-  bottom:10px;
+  bottom:5px;
+  li {
+    width:20px;
+    height:20px;
+  }
+  .active {
+    width:20px;
+    height:20px;
+  }
 }
 
 .slideTitle {
@@ -89,9 +100,7 @@ ul{
     font-size: 1.5rem;
   }
 }
-#jobImg {
-  background-image: url();
-}
+
 .jobTitle {
   font-size: 3rem;
   font-family: $font-header;
@@ -99,8 +108,9 @@ ul{
   padding-right: 8px;
   padding-bottom: 100px;
 }
-//PROJECTS CAROUSEL
+//////PROJECTS CAROUSEL//////////
 #work {
+  padding: 10px;
   .item {
 
   }
@@ -110,8 +120,9 @@ ul{
   }
 
 }
-//LIFE CAROUSEL
+//////LIFE CAROUSEL///////////
 #interests {
+  padding: 10px;
   .item {
 
   }
@@ -120,6 +131,8 @@ ul{
     font-family: $font-subheader;
   }
 }
+
+///REST OF NAME STUFF/////
 .name {
     width:auto;
     margin-left: 15%;
@@ -132,11 +145,19 @@ ul{
 }
 
 #max {
-  top:180px;
+  top:240px;
 }
 #lyle {
-  top:420px;
+  top:460px;
 }
 #krause {
-  top:660px;
+  top:700px;
+}
+
+
+////VIDEO MODAL ///////
+#videoModal {
+  .modal-content{
+    margin-left: 11%;
+  }
 }

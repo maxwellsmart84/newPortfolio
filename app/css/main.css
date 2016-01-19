@@ -7,11 +7,11 @@ ul {
 .headerBar {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  text-align: center;
   height: 0; }
   .headerBar i {
     color: rgba(255, 255, 255, 0);
-    padding: 10px; }
+    padding: 10px;
+    text-align: center; }
 
 .hide {
   display: none; }
@@ -41,7 +41,13 @@ ul {
   margin-bottom: 10px; }
 
 .carousel-indicators {
-  bottom: 10px; }
+  bottom: 5px; }
+  .carousel-indicators li {
+    width: 20px;
+    height: 20px; }
+  .carousel-indicators .active {
+    width: 20px;
+    height: 20px; }
 
 .slideTitle {
   text-align: center;
@@ -70,9 +76,6 @@ h2 {
   .expCols ul {
     font-size: 1.5rem; }
 
-#jobImg {
-  background-image: url(url(); }
-
 .jobTitle {
   font-size: 3rem;
   font-family: "Raleway", sans-serif;
@@ -80,13 +83,17 @@ h2 {
   padding-right: 8px;
   padding-bottom: 100px; }
 
-#work h2 {
-  color: white;
-  font-family: "Fugaz One", cursive; }
+#work {
+  padding: 10px; }
+  #work h2 {
+    color: white;
+    font-family: "Fugaz One", cursive; }
 
-#interests h2 {
-  color: white;
-  font-family: "Fugaz One", cursive; }
+#interests {
+  padding: 10px; }
+  #interests h2 {
+    color: white;
+    font-family: "Fugaz One", cursive; }
 
 .name {
   width: auto;
@@ -99,10 +106,13 @@ h2 {
   letter-spacing: 30px; }
 
 #max {
-  top: 180px; }
+  top: 240px; }
 
 #lyle {
-  top: 420px; }
+  top: 460px; }
 
 #krause {
-  top: 660px; }
+  top: 700px; }
+
+#videoModal .modal-content {
+  margin-left: 11%; }

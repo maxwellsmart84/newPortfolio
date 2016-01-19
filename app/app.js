@@ -10,6 +10,8 @@ var page = {
 
   initEvents: function(){
     page.triggerInitAnim();
+    page.modalVideo();
+    page.modalVideoStop();
   },
 
   carouselStart: function (){
@@ -53,5 +55,19 @@ var page = {
      $("#headerInit").on ("click", function (event){
      page.initialAnim();
    });
-  }
+ },
+
+   modalVideo: function (){
+     $("#videoLink").on("click", function (event){
+       var src = "https://www.youtube.com/embed/mOCtlaUJcts";
+       $("#videoModal").modal('show');
+       $('#videoModal iframe').attr('src', src);
+     });
+   },
+   modalVideoStop: function(){
+     $('#videoModal button').click(function () {
+       event.preventDefault();
+        $('#videoModal iframe').removeAttr('src');
+    });
+   }
 };
