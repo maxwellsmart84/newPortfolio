@@ -13,10 +13,10 @@
   <body>
       <header>
         <div class="headerBar">
-          <a href="https://github.com/maxwellsmart84"><i class="hidden fa fa-github fa-5x"></i></a>
-          <a href="https://www.linkedin.com/in/maxwell-krause-110b2521"><i class="hidden fa fa-linkedin fa-5x"></i></a>
-          <a href="mailto:maxwell.l.krause@gmail.com?subject=I%20Saw%20Your%20Portfolio%20And..."><i class="hidden fa fa-envelope-o fa-5x"></i></a>
-          <a download ="MaxwellKrauseResume.pdf" ><i class="hidden fa fa-file fa-5x"></i></a>
+          <a target="_blank" href="https://github.com/maxwellsmart84"><i class="connectIcons fa fa-github fa-5x"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/maxwell-krause-110b2521"><i class="connectIcons fa fa-linkedin fa-5x"></i></a>
+          <a target="_blank" href="mailto:maxwell.l.krause@gmail.com?subject=I%20Saw%20Your%20Portfolio%20And..."><i class=" connectIcons fa fa-envelope-o fa-5x"></i></a>
+          <a target= "_blank" href="MaxwellKrauseResume.pdf" ><i class=" connectIcons fa fa-file fa-5x"></i></a>
         </div>
       </header>
       <div id="headerInit">
@@ -26,7 +26,7 @@
       <h1 id="lyle" class="name">yle</h1>
       <h1 id="krause" class="name">rause</h1>
       <div id="allCarousels">
-        <div id="experience" class="section hidden carousel slide">
+        <div id="experience" class="hidden section carousel slide">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#experience" data-slide-to="0" class="active"></li>
@@ -38,60 +38,76 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <h2 class="sectionHead">Experience</h2>
+            <!-- BEGIN CAROUSEL CONTENT -->
+            <div class="carSection item active">
+              <h1 class="slideTitle">Experience</h1>
+          </div>
 
-            </div>
 
             <!-- TOPTIX -->
-            <div class="item">
-              <h2 class="sectionHead">Where I've Worked</h2>
-                <p>Hosting and Systems Administrator</p>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>s
-                </ul>
-              <!-- <div class="carousel-caption">
-                TopTix LTD.
-              </div> -->
+            <div class=" item">
+              <h2 class="sectionHead">TopTix US</h2>
+              <div class="row">
+                <div class="jobTitle expCols col-sm-4">Hosting and Systems Administrator</div>
+                <div class="expCols col-sm-8">
+                  <ul>
+                    <li>Assisted CEO with decisions for design, implementation, and installation of TopTix ticketing software as a managed service</li>
+                    <li>Managed networks and network security, physical and virtual servers, and database administration for both legacy and current generation software in a multi-tenanted environment to provide a profitable managed service</li>
+                    <li>Provided 24/7 Tier 3 support for any network/environmental issues</li>
+                    <li>Budgeted for managed services and in-office IT </li>
+                  </ul>
+                </div>
             </div>
+          </div>
+
+          <!-- QUTERA -->
+          <div class="carSection item">
+            <h2 class="sectionHead">Qutera</h2>
+            <div class="row">
+              <div class="jobTitle expCols col-sm-4">Business Devolpment/<br>Systems Engineer</div>
+              <div class="expCols col-sm-6">
+                <ul>
+                  <li>Established and implemented improved standards and best practices for sales procedures, resulting in stronger client relationships and opportunities</li>
+                  <li>Managed customer support staff and programs across multiple channels including phone and email inquiries. </li>
+                  <li>Responsible for “sandboxing” custom software solutions for integration into our SaaS platform</li>
+                  <li>Showed strong leadership skills, coupled with working as a team, to provide clients with a complete hosted solution</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
             <!-- BLACKBAUD -->
-            <div class="item">
-              <h2 class="sectionHead">Technologies I Know</h2>
-              <!-- <div class="carousel-caption">
-                Blackbaud
-              </div> -->
-            </div>
-
-            <!-- QUTERA -->
-            <div class="item">
-              <h2 class="sectionHead">Things </h2>
-              <!-- <div class="carousel-caption">
-                Qutera
-              </div> -->
+            <div class=" carSection item">
+              <h2 class="sectionHead">Blackbaud</h2>
+              <div class="row">
+                <div class="jobTitle expCols col-sm-4">NetCommunity Support Analyst</div>
+                <div class="expCols col-sm-6">
+                  <ul>
+                    <li>Provided in-depth support and troubleshooting services for NetCommunity users, such as Ronald McDonald     Charities, AIDS Foundation of Chicago, and Water.org</li>
+                    <li>Maintained and surpassed call center metrics: number of issues resolved, positive client surveys, and time to resolution</li>
+                    <li>Executed supplemental after-hours support for high priority clients</li>
+                    <li>Explained technical concepts to clients based on their skill level</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             <!-- S-NET -->
-            <div class="item">
+            <div class="carSection item">
               <h2 class="sectionHead">S-Net</h2>
-              <!-- <div class="carousel-caption">
-                S-Net
-              </div> -->
+              <div class="row">
+                <div class="jobTitle expCols col-sm-4">Field Network Engineer</div>
+                <div class="expCols col-sm-6">
+                  <ul>
+                    <li>Configured, supported, and installed Cisco hardware and VoIP PBX software allowing custom SIP phone solutions</li>
+                    <li>Managed training initiatives for international call center staff in client interaction and technology SOPs and developed training documentation and media for all future employees</li>
+                    <li>Improved client relations across many verticals, providing a face and name to the compan</li>
+                    <li>Maintained up to date technical documentation of legacy and new software</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-
           </div>
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
         <div id="work" class="section hidden carousel slide">
           <!-- Indicators -->
@@ -104,56 +120,31 @@
           </ol>
 
           <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <h2 class="sectionHead">Work</h2>
-              <!-- <div class="carousel-caption">
-                <h2>Projects</h2>
-              </div> -->
+          <div class="expSlide carousel-inner" role="listbox">
+            <div class="carSection item active">
+              <h1 class="slideTitle">Projects</h1>
             </div>
 
             <!-- SCHINDIG -->
-            <div class="item">
-              <h2 "sectionHead">Schindig</h2>
-              <!-- <div class="carousel-caption">
-                Mobile Application
-              </div> -->
+            <div class="carSection item">
+              <h2 class="sectionHead">Schindig</h2>
             </div>
 
             <!-- CROWDLESS -->
-            <div class="item">
-              <h2 "sectionHead">Crowdless App</h2>
-              <!-- <div class="carousel-caption">
-                Crowdless
-              </div> -->
+            <div class="carSection item">
+              <h2 class="sectionHead">Crowdless App</h2>
             </div>
 
             <!-- PHOTO ALBUM -->
-            <div class="item">
+            <div class="carSection item">
               <h2 class="sectionHead">Photo Album</h2>
-              <!-- <div class="carousel-caption">
-                Photo Album
-              </div> -->
             </div>
 
             <!-- POWELL PERALTA -->
-            <div class="item">
+            <div class="carSection item">
               <h2 class="sectionHead">Web Design</h2>
-              <!-- <div class="carousel-caption">
-                Powell Peralta
-              </div> -->
             </div>
-
           </div>
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
         <div id="interests" class="section hidden carousel slide">
           <!-- Indicators -->
@@ -167,31 +158,26 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <h2 class="sectionHead">Life</h2>
-              <!-- <div class="carousel-caption">
-                <h2>Life</h2>
-              </div> -->
-            </div>
+            <div class="carSection item active">
+              <h1 class="slideTitle">Interests</h1>
+          </div>
+
 
             <!-- BEAR -->
-            <div class="item">
-              <h2 "sectionHead">Bear Pear</h2>
-              <!-- <div class="carousel-caption">
-                Mobile Application
-              </div> -->
+            <div class="carSection item">
+              <h2 class="sectionHead">Bear Pear</h2>
             </div>
 
             <!-- ASHLEY -->
-            <div class="item">
-              <h2 "sectionHead">My Wife</h2>
+            <div class="carSection item">
+              <h2 class="sectionHead">My Wife</h2>
               <!-- <div class="carousel-caption">
                 Wife is Life
               </div> -->
             </div>
 
             <!-- BIKE -->
-            <div class="item">
+            <div class="carSection item">
               <h2 class="sectionHead">Bike</h2>
               <!-- <div class="carousel-caption">
                 Bike
@@ -199,22 +185,13 @@
             </div>
 
             <!-- CHARLESTON -->
-            <div class="item">
-              <h2 "sectionHead">Charleston</h2>
+            <div class="carSection item">
+              <h2 class="sectionHead">Charleston</h2>
               <!-- <div class="carousel-caption">
                 Charleston
               </div> -->
             </div>
           </div>
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
       </div>
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>

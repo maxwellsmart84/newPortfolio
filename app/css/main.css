@@ -1,21 +1,17 @@
 body {
-  width: 100%;
-  height: auto; }
+  width: 100%; }
 
 ul {
   display: inline-block; }
 
-.sectionHead {
-  margin-top: 0;
-  margin-bottom: 40px;
-  border-bottom: double white 5px 2px; }
-
 .headerBar {
-  background-color: rgba(0, 0, 0, 0.6); }
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  text-align: center;
+  height: 0; }
   .headerBar i {
-    display: inline-block;
-    text-align: center;
-    color: white; }
+    color: rgba(255, 255, 255, 0);
+    padding: 10px; }
 
 .hide {
   display: none; }
@@ -25,7 +21,7 @@ ul {
   display: block;
   height: 200px; }
   #headerInit .initials {
-    font-size: 12em;
+    font-size: 13em;
     font-family: "Raleway", sans-serif;
     margin-top: 0;
     position: relative; }
@@ -38,18 +34,51 @@ ul {
   width: 0;
   margin-left: 15%;
   display: block;
-  margin-bottom: 2%;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 1% 3% 3% 3%;
-  height: 200px;
-  border-radius: 20px; }
+  height: 300px;
+  border-radius: 20px;
+  margin-bottom: 10px; }
 
-.carousel-control {
-  border-radius: 20px; }
+.carousel-indicators {
+  bottom: 10px; }
 
-#experience h2 {
+.slideTitle {
+  text-align: center;
+  font-size: 7rem;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  padding-top: 40px; }
+
+#experience {
+  padding: 10px; }
+
+h2 {
   color: white;
   font-family: "Fugaz One", cursive; }
+
+.sectionHead {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: white;
+  border-bottom: 2px solid white;
+  outline: 1px solid white;
+  outline-offset: 5px; }
+
+.expCols {
+  color: white; }
+  .expCols ul {
+    font-size: 1.5rem; }
+
+#jobImg {
+  background-image: url(url(); }
+
+.jobTitle {
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  border-right: 1px solid white;
+  padding-right: 8px;
+  padding-bottom: 100px; }
 
 #work h2 {
   color: white;
