@@ -17,12 +17,13 @@
     "type": "git",
     "url": "git+https://github.com/maxwellsmart84/newPortfolio/newPortfolio.git"
   },
+  "keywords": [
+    "portfolio"
+  ],
   "author": "Maxwell Krause",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/crowdless-app/crowdless-website/issues"
   },
-  "keywords": [
-    "portfolio"
-  ],
+
 }
