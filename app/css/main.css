@@ -31,7 +31,7 @@ ul {
   margin-top: -55%; }
 
 .section {
-  width: 0;
+  width: 80%;
   margin-left: 15%;
   display: block;
   background-color: rgba(0, 0, 0, 0.9);
@@ -69,7 +69,8 @@ h2 {
   color: white;
   border-bottom: 2px solid white;
   outline: 1px solid white;
-  outline-offset: 5px; }
+  outline-offset: 5px;
+  padding-bottom: .5%; }
 
 .expCols {
   color: white; }
@@ -88,6 +89,37 @@ h2 {
   #work h2 {
     color: white;
     font-family: "Fugaz One", cursive; }
+
+.projCols {
+  color: white;
+  border-right: 1px solid white; }
+  .projCols .projTitle {
+    top: -16px;
+    position: relative;
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    display: inline-block;
+    padding-bottom: 3%;
+    margin: 0; }
+  .projCols i {
+    color: white;
+    display: inline-block;
+    padding-left: 8%; }
+  .projCols ul {
+    font-size: 1.1em;
+    float: bottom; }
+  .projCols h3 {
+    font-size: 1em;
+    text-align: center; }
+
+#videoLink {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+  font-style: "Fugaz One", cursive; }
+
+#videoModal .modal-content {
+  margin-left: 11%; }
 
 #interests {
   padding: 10px; }
@@ -112,6 +144,3 @@ h2 {
 
 #krause {
   margin-top: 9%; }
-
-#videoModal .modal-content {
-  margin-left: 11%; }

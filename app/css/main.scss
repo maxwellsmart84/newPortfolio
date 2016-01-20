@@ -45,7 +45,7 @@ ul{
   margin-top: -55%;
 }
 .section {
-  width:0;
+  width:80%;;
   margin-left: 15%;
   display:block;
   background-color: rgba(#000000, 0.9);
@@ -91,6 +91,7 @@ ul{
     border-bottom: 2px solid white;
     outline: 1px solid white;
     outline-offset: 5px;
+    padding-bottom: .5%;
 
 }
 
@@ -118,7 +119,47 @@ ul{
     color:white;
     font-family: $font-subheader;
   }
+}
 
+.projCols {
+  color:white;
+  border-right: 1px solid white;
+  .projTitle {
+    top: -16px;
+    position:relative;
+    font-size: 2.5rem;
+    font-family: $font-header;
+    display: inline-block;
+    padding-bottom: 3%;
+    margin:0;
+  }
+  i{
+    color:white;
+    display:inline-block;
+    padding-left: 8%;
+  }
+  ul{
+    font-size: 1.1em;
+    float:bottom
+
+  }
+  h3{
+    font-size: 1em;
+    text-align: center;
+  }
+}
+#videoLink {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+  font-style: $font-subheader;
+
+}
+
+#videoModal {
+  .modal-content{
+    margin-left: 11%;
+  }
 }
 //////LIFE CAROUSEL///////////
 #interests {
@@ -152,12 +193,4 @@ margin-top: 7.8%;
 #krause {
   margin-top: 9%;
 
-}
-
-
-////VIDEO MODAL ///////
-#videoModal {
-  .modal-content{
-    margin-left: 11%;
-  }
 }
