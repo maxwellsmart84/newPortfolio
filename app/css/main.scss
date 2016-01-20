@@ -41,8 +41,8 @@ ul{
 }
 
 #allCarousels{
-  position: relative;
-  bottom:20vh;
+  z-index:1;
+  margin-top: -55%;
 }
 .section {
   width:0;
@@ -136,22 +136,22 @@ ul{
 .name {
     width:auto;
     margin-left: 15%;
-    margin-bottom: 5%;
     z-index: -1;
-    position:absolute;
     font-size: 8em;
     color:rgba(#bab9b9, 0);
     letter-spacing: 30px;
 }
 
 #max {
-  top:240px;
+  margin-top: -3.7%;
+  margin-bottom: 3%
 }
 #lyle {
-  top:460px;
+margin-top: 7.8%;
 }
 #krause {
-  top:700px;
+  margin-top: 9%;
+
 }
 
 

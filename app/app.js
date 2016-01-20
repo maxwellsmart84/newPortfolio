@@ -32,9 +32,9 @@ var page = {
      tl.to(".section", 1, {width:"80%"}, 10);
      tl.addCallback(page.removeHiddenSec, 10);
      tl.addCallback(page.removeHiddenInd, 10);
-     tl.to("#M", 1, {right:"35%", top:"60px"}, 10);
-     tl.to("#L", 1, {right:"45%", top:"385px"}, 10);
-     tl.to("#K", 1, {right: "53.5%", top: "700px"}, 10);
+     tl.to("#M", 1.5, {right:"35%", top:"60px"}, 10);
+     tl.to("#L", 1.5, {right:"45%", top:"385px"}, 10);
+     tl.to("#K", 1.5, {right: "53.5%", top: "700px"}, 10);
      tl.addCallback(page.carouselStart);
    },
 

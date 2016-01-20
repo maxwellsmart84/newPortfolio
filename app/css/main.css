@@ -27,8 +27,8 @@ ul {
     position: relative; }
 
 #allCarousels {
-  position: relative;
-  bottom: 20vh; }
+  z-index: 1;
+  margin-top: -55%; }
 
 .section {
   width: 0;
@@ -98,21 +98,20 @@ h2 {
 .name {
   width: auto;
   margin-left: 15%;
-  margin-bottom: 5%;
   z-index: -1;
-  position: absolute;
   font-size: 8em;
   color: rgba(186, 185, 185, 0);
   letter-spacing: 30px; }
 
 #max {
-  top: 240px; }
+  margin-top: -3.7%;
+  margin-bottom: 3%; }
 
 #lyle {
-  top: 460px; }
+  margin-top: 7.8%; }
 
 #krause {
-  top: 700px; }
+  margin-top: 9%; }
 
 #videoModal .modal-content {
   margin-left: 11%; }
