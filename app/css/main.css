@@ -373,7 +373,7 @@ h2 {
   margin-left: 15%;
   z-index: -1;
   font-size: 8em;
-  color: #bab9b9;
+  color: rgba(186, 185, 185, 0);
   letter-spacing: 30px; }
 
 #max {
