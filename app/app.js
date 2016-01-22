@@ -30,7 +30,6 @@ var page = {
 
     letterPosition: function (){
       var windowSize = $(window).width();
-      console.log(windowSize);
       if (windowSize <= 1024){
         mRight = "32%";
         kRight = "56.5%";
@@ -48,7 +47,18 @@ var page = {
    },
 
    initialAnim: function (){
+     var windowSize = $(window).width();
      var tl = new TimelineMax ();
+     if (windowSize <= 415) {
+       tl.to(".headerBar", 0.5, {height:"15vh", display:"flex", justifyContent:"center", backgroundColor: "rgba(#000000, 0.6"}, 0);
+       tl.to(".connectIcons", 2, {color:"white", opacity:1}, 0);
+       tl.to(".section", 1, {width:"93%"}, 1);
+       tl.addCallback(page.removeHiddenSec, 1);
+       tl.addCallback(page.removeHiddenInd, 1);
+       tl.addCallback(page.carouselStart);
+      }
+     else {
+    //  var tl = new TimelineMax ();
      tl.to("#M", 1, {right: mRight, top: mTop});
      tl.to("#L", 1, {right:lRight, top:lTop});
      tl.to("#K", 1, {right: kRight, top: kTop});
@@ -63,6 +73,7 @@ var page = {
      tl.to("#L", 1.5, {right: lRight, top:"385px"}, 10);
      tl.to("#K", 1.5, {right: kRight, top: "700px"}, 10);
      tl.addCallback(page.carouselStart);
+    }
    },
 
    removeHiddenSec: function (){

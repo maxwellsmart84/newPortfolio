@@ -26,9 +26,6 @@ ul {
       .headerBar i {
         padding: 58% 10%; } }
 
-.hide {
-  display: none; }
-
 #headerInit {
   text-align: center;
   display: block;
@@ -42,7 +39,10 @@ ul {
 #allCarousels {
   z-index: 1;
   margin-top: -55%; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 415px) {
+    #allCarousels {
+      margin-top: -100%; } }
+  @media screen and (max-width: 1024px) {
     #allCarousels {
       margin-top: -62%; } }
   @media screen and (min-width: 1440px) {
@@ -67,6 +67,9 @@ ul {
   height: 300px;
   border-radius: 20px;
   margin-bottom: 1%; }
+  @media screen and (max-width: 415px) {
+    .section {
+      margin-left: 2%; } }
 
 .carousel-indicators {
   bottom: 5px; }
@@ -83,6 +86,9 @@ ul {
   font-family: "Raleway", sans-serif;
   color: white;
   padding-top: 40px; }
+  @media screen and (min-width: 415px) {
+    .slideTitle {
+      font-size: 6rem; } }
 
 #experience {
   padding: 1%; }
@@ -191,7 +197,7 @@ h2 {
     display: inline-block;
     padding-bottom: 3%;
     margin: 0; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (max-width: 1024px) {
       .projCols .projTitle {
         top: -2px; } }
   .projCols i {
@@ -212,7 +218,7 @@ h2 {
   @media screen and (min-width: 1920px) {
     #videoLink {
       font-size: 3rem; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     #videoLink {
       font-size: 1.5rem; } }
 
@@ -255,7 +261,7 @@ h2 {
   margin-left: 5%;
   width: 45%;
   color: white; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     #charleston {
       padding-bottom: 7%; } }
   @media screen and (min-width: 1440px) {
@@ -280,7 +286,7 @@ h2 {
   padding-bottom: 12%;
   border-radius: 10px;
   background-position: center; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     #ashley {
       padding-bottom: 15%; } }
   @media screen and (min-width: 1440px) {
@@ -309,7 +315,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: 0 17%;
   border-radius: 10px; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     #bearPear {
       padding-bottom: 15%; } }
   @media screen and (min-width: 1440px) {
@@ -327,7 +333,7 @@ h2 {
     text-align: right;
     padding-right: 3%;
     color: white; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (max-width: 1024px) {
       #bearPear h1 {
         font-size: 2.2em;
         padding-right: 2%; } }
@@ -336,7 +342,7 @@ h2 {
     text-align: right;
     padding-right: 3%;
     color: white; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (max-width: 1024px) {
       #bearPear p {
         padding: 0; } }
 
@@ -379,7 +385,7 @@ h2 {
 #max {
   margin-top: -3.7%;
   margin-bottom: 3%; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     #max {
       margin-top: -10%; } }
   @media screen and (min-width: 1440px) {
@@ -413,7 +419,7 @@ h2 {
 
 #krause {
   margin-top: 9%; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     #krause {
       margin-top: 12.5%; } }
   @media screen and (min-width: 1440px) {

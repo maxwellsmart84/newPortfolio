@@ -45,9 +45,6 @@ ul{
 }
 
 
-.hide {
-  display:none;
-}
 
 #headerInit {
   text-align: center;
@@ -64,7 +61,10 @@ ul{
 #allCarousels{
   z-index:1;
   margin-top: -55%;
-  @media screen and (min-width: $break-1024) {
+  @media screen and (max-width: $break-415) {
+  margin-top: -100%;
+  }
+  @media screen and (max-width: $break-1024) {
   margin-top: -62%;
   }
   @media screen and (min-width: $break-1440) {
@@ -89,6 +89,9 @@ ul{
   height:300px;
   border-radius: 20px;
   margin-bottom: 1%;
+  @media screen and (max-width: $break-415) {
+  margin-left: 2%;
+  }
 }
 
 .carousel-indicators {
@@ -109,6 +112,9 @@ ul{
   font-family: $font-header;
   color:white;
   padding-top: 40px;
+  @media screen and (min-width: $break-415) {
+  font-size: 6rem;
+  }
 }
 
 //////EXPERIENCE CAROUSEL//////////
@@ -240,7 +246,7 @@ ul{
     display: inline-block;
     padding-bottom: 3%;
     margin:0;
-    @media screen and (min-width: $break-1024) {
+    @media screen and (max-width: $break-1024) {
     top: -2px;
     }
   }
@@ -266,7 +272,7 @@ ul{
   @media screen and (min-width: $break-1920) {
   font-size: 3rem;
   }
-  @media screen and (min-width: $break-1024) {
+  @media screen and (max-width: $break-1024) {
   font-size: 1.5rem;
   }
 }
@@ -317,7 +323,7 @@ ul{
   margin-left: 5%;
   width:45%;
   color:white;
-  @media screen and (min-width: $break-1024) {
+  @media screen and (max-width: $break-1024) {
   padding-bottom: 7%;
   }
   @media screen and (min-width: $break-1440) {
@@ -345,7 +351,7 @@ ul{
   padding-bottom: 12%;
   border-radius: 10px;
   background-position: center;
-  @media screen and (min-width: $break-1024) {
+  @media screen and (max-width: $break-1024) {
   padding-bottom: 15%;
   }
   @media screen and (min-width: $break-1440) {
@@ -377,7 +383,7 @@ ul{
   background-repeat: no-repeat;
   background-position: 0 17%;
   border-radius: 10px;
-  @media screen and (min-width: $break-1024) {
+  @media screen and (max-width: $break-1024) {
   padding-bottom: 15%;
   }
   @media screen and (min-width: $break-1440) {
@@ -396,7 +402,7 @@ ul{
     text-align: right;
     padding-right: 3%;
     color: white;
-    @media screen and (min-width: $break-1024) {
+    @media screen and (max-width: $break-1024) {
       font-size: 2.2em;
       padding-right: 2%;
     }
@@ -406,7 +412,7 @@ ul{
     text-align: right;
     padding-right: 3%;
     color:white;
-    @media screen and (min-width: $break-1024) {
+    @media screen and (max-width: $break-1024) {
       padding:0;
     }
   }
@@ -456,7 +462,7 @@ ul{
 #max {
   margin-top: -3.7%;
   margin-bottom: 3%;
-  @media screen and (min-width: $break-1024) {
+  @media screen and (max-width: $break-1024) {
     margin-top: -10%;
   }
 
@@ -491,7 +497,7 @@ ul{
 }
 #krause {
   margin-top: 9%;
-  @media screen and (min-width: $break-1024) {
+  @media screen and (max-width: $break-1024) {
     margin-top: 12.5%;
   }
   @media screen and (min-width: $break-1440) {
