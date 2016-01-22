@@ -1,18 +1,24 @@
 $font-header: "Raleway", sans-serif;
 $font-subheader: "Fugaz One", cursive;
 
+$break-400: 400px;
+$break-1440: 1440px;
+$break-1600: 1600px;
+$break-1680: 1680px;
+$break-1920: 1920px;
+
 
 body {
   width:100%;
 }
 
 a {
-
-  &:hover{
-    text-shadow: 0 0 1px white
-              0 0 3px white
-              0 0 5px white;
-            }
+  color: white;
+}
+a:hover {
+    text-shadow:  0 0 1px white
+                  0 0 3px white
+                  0 0 5px white;
 }
 
 ul{
@@ -25,9 +31,15 @@ ul{
   height:0;
   i {
     color:rgba(#ffffff, 0);
-    padding:10px;
+    padding:1%;
     text-align: center;
-
+    padding: 10%;
+    @media screen and (min-width: $break-1600) {
+      padding: 38% 10%;
+    }
+    @media screen and (min-width: $break-1920) {
+      padding: 58% 10%;
+    }
   }
 }
 
@@ -51,16 +63,28 @@ ul{
 #allCarousels{
   z-index:1;
   margin-top: -55%;
+  @media screen and (min-width: $break-1440) {
+  margin-top: -47%;
+  }
+  @media screen and (min-width: $break-1600) {
+  margin-top: -44%;
+  }
+  @media screen and (min-width: $break-1680) {
+    margin-top: -41%;
+  }
+  @media screen and (min-width: $break-1920) {
+  margin-top: -37%;
+  }
 }
 .section {
-  width:80%;;
+  width:0;
   margin-left: 15%;
   display:block;
   background-color: rgba(#000000, 0.9);
   padding:1% 3% 3% 3%;
   height:300px;
   border-radius: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 1%;
 }
 
 .carousel-indicators {
@@ -86,7 +110,7 @@ ul{
 //////EXPERIENCE CAROUSEL//////////
 
 #experience {
-  padding: 10px;
+  padding: 1%;
   }
   h2 {
     color:white;
@@ -119,7 +143,7 @@ ul{
 }
 //////PROJECTS CAROUSEL//////////
 #work {
-  padding: 10px;
+  padding: 1%;
   .item {
 
   }
@@ -129,24 +153,60 @@ ul{
   }
 }
 
+
 #col1Crowd {
-  padding-bottom: 10%;
-}
-#col1Photo {
-  padding-bottom: 15%;
-}
-#col1Bucket {
-  padding-bottom: 10%;
+  padding-bottom: 7%;
+  @media screen and (min-width: $break-1920) {
+  padding-bottom: 9.5%;
+  }
 }
 
 #col2Crowd {
   padding-bottom: 7%;
+  @media screen and (min-width: $break-1920) {
+    padding-bottom: 8.5%;
+  }
 }
+
+#col1Photo {
+  padding-bottom: 15%;
+  @media screen and (min-width: $break-1600) {
+  padding-bottom: 12%;
+  }
+  @media screen and (min-width: $break-1920) {
+  padding-bottom: 11%;
+  }
+}
+
 #col2Photo {
   padding-bottom: 10%;
+  @media screen and (min-width: $break-1600) {
+  padding-bottom: 12%;
+  }
+  @media screen and (min-width: $break-1920) {
+  padding-bottom: 9.5%;
+  }
 }
+
+#col1Bucket {
+  padding-bottom: 10%;
+}
+
 #col2Bucket {
   padding-bottom: 5%;
+  @media screen and (min-width: $break-1920) {
+  padding-bottom: 7.5%;
+  }
+}
+#col1Schin {
+  @media screen and (min-width: $break-1920) {
+  padding-bottom: 7.5%;
+  }
+}
+#col2Schin {
+  @media screen and (min-width: $break-1920) {
+    padding-bottom: 6%;
+  }
 }
 
 .projCols {
@@ -155,7 +215,19 @@ ul{
   img{
     width:37%;
     padding-top: 2%;
+    @media screen and (min-width: $break-1440) {
+    padding-top:0;
+    }
+    @media screen and (min-width: $break-1600) {
+      width:32%;
+    }
+    @media screen and (min-width: $break-1680) {
+    width:28%;
+    }
+    @media screen and (min-width: $break-1920) {
+    width: 24%;
   }
+}
   .projTitle {
     top: -16px;
     position:relative;
@@ -165,17 +237,17 @@ ul{
     padding-bottom: 3%;
     margin:0;
   }
-  i{
+  i {
     color:white;
     display:inline-block;
     padding-left: 8%;
   }
-  ul{
+  ul {
     font-size: 1.1em;
     float:bottom
 
   }
-  h3{
+  h3 {
     font-size: 1em;
     text-align: center;
   }
@@ -184,6 +256,9 @@ ul{
   font-size: 2rem;
   text-align: center;
   font-style: $font-subheader;
+  @media screen and (min-width: $break-1920) {
+  font-size: 3rem;
+  }
 }
 
 #videoModal {
@@ -193,10 +268,7 @@ ul{
 }
 //////LIFE CAROUSEL///////////
 #interests {
-  padding: 10px;
-  .item {
-
-  }
+  padding: 1%;
   h2 {
     color:white;
     font-family: $font-subheader;
@@ -210,28 +282,40 @@ ul{
   width:45%;
   margin-right: 5%;
   color:white;
+  @media screen and (min-width: $break-1440) {
+  padding-bottom: 8%;
+  }
+  @media screen and (min-width: $break-1600) {
+  padding-bottom: 7%;
+  }
 
-  h1{
+  h1 {
     font-family: $font-header;
     text-align: center;
     color:white;
   }
-  p{
+  p {
     font-size: 1.8rem;
     text-align: center;
   }
-
 }
 #charleston {
   background-image: url("../charleston.jpg");
-  padding-bottom: 7%;
+  padding-bottom: 11%;
   background-size: cover;
   border-radius: 10px;
   margin-left: 5%;
   width:45%;
   color:white;
-
-  ;
+  @media screen and (min-width: $break-1440) {
+    padding-bottom: 8%;
+  }
+  @media screen and (min-width: $break-1600) {
+    padding-bottom: 7%;
+  }
+  @media screen and (min-width: $break-1920) {
+    padding-bottom: 5.4%;
+  }
   h1{
     font-family: $font-header;
     text-align: center;
@@ -241,12 +325,23 @@ ul{
     text-align: center;
   }
 }
+
 #ashley {
   background-image: url("../charlestonWed.jpg");
   background-size: cover;
   padding-bottom: 12%;
   border-radius: 10px;
   background-position: center;
+  @media screen and (min-width: $break-1440) {
+  padding-bottom: 11%;
+  }
+  @media screen and (min-width: $break-1600) {
+  padding-bottom: 9%;
+  }
+  @media screen and (min-width: $break-1920) {
+  padding-bottom: 7.5%;
+  background-position: 0 55%;
+  }
   h1{
     font-family: $font-header;
     text-align: right;
@@ -265,16 +360,25 @@ ul{
   padding-bottom: 12%;
   background-repeat: no-repeat;
   background-position: 0 17%;
+  border-radius: 10px;
+  @media screen and (min-width: $break-1440) {
+  padding-bottom: 11%;
+  }
+  @media screen and (min-width: $break-1600) {
+  padding-bottom: 9%;
+  }
+  @media screen and (min-width: $break-1920) {
+    background-size: 50%;
+    padding-bottom: 7.5%;
+  }
 
-
-
-  h1{
+  h1 {
     font-family: $font-header;
     text-align: right;
     padding-right: 3%;
     color: white;
   }
-  p{
+  p {
     font-size: 1.8rem;
     text-align: right;
     padding-right: 3%;
@@ -282,13 +386,22 @@ ul{
   }
 }
 
-///MY SECTION///
 #me {
   background-image: url("../me.jpg");
   background-size: 144%;
   background-repeat: no-repeat;
   padding-bottom: 5%;
   border-radius: 10px;
+  @media screen and (min-width: $break-1440) {
+  padding-bottom: 4%;
+  }
+  @media screen and (min-width: $break-1600) {
+  padding-bottom: 3%;
+  }
+  @media screen and (min-width: $break-1920) {
+    background-size: 100%;
+    padding-bottom:2.5%;
+  }
   h1{
     font-family: $font-header;
     text-align: right;
@@ -304,13 +417,7 @@ ul{
   }
 }
 
-
-
-
-
-
-
-///REST OF NAME STUFF/////
+// /REST OF NAME STUFF/////
 .name {
     width:auto;
     margin-left: 15%;
@@ -322,12 +429,48 @@ ul{
 
 #max {
   margin-top: -3.7%;
-  margin-bottom: 3%
+  margin-bottom: 3%;
+  @media screen and (min-width: $break-1440) {
+  margin-left:15%;
+  }
+  @media screen and (min-width: $break-1600) {
+    margin-top: -3%;
+  }
+  @media screen and (min-width: $break-1920) {
+  margin-top: -2.5%;
+  margin-left: 11%;
+  }
 }
 #lyle {
-margin-top: 7.8%;
+  margin-top:7.8%;
+  @media screen and (min-width: $break-1440) {
+  margin-top:7%;
+  }
+  @media screen and (min-width: $break-1600) {
+    margin-top: 7%;
+    margin-left: 13%;
+  }
+  @media screen and (min-width: $break-1680) {
+    margin-top: 6%;
+    margin-left: 13%;
+  }
+  @media screen and (min-width: $break-1920) {
+    margin-left: 10.5%;
+    margin-top: 5%;
+  }
 }
 #krause {
   margin-top: 9%;
-
+  @media screen and (min-width: $break-1440) {
+  margin-top: 8%;
+  margin-left: 13.5%;
+  }
+  @media screen and (min-width: $break-1600) {
+    margin-top: 7%;
+    margin-left: 13.5%;
+  }
+  @media screen and (min-width: $break-1920) {
+    margin-top: 6.1%;
+    margin-left: 10.5%;
+  }
 }
