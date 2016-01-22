@@ -11,11 +11,18 @@ $break-1920: 1920px;
 
 body {
   width:100%;
-}
+  a {
+    color: white;
+    &:hover {
+      color:white;
+      text-shadow:  0 0 1px white
+                    0 0 3px white
+                    0 0 5px white;
+      }
+    }
+  }
 
-a {
-  color: white;
-}
+
 a:hover {
     text-shadow:  0 0 1px white
                   0 0 3px white
@@ -64,7 +71,7 @@ ul{
   @media screen and (max-width: $break-415) {
   margin-top: -100%;
   }
-  @media screen and (max-width: $break-1024) {
+  @media screen and (min-width: $break-415) and (max-width: $break-1024) {
   margin-top: -62%;
   }
   @media screen and (min-width: $break-1440) {
@@ -112,7 +119,7 @@ ul{
   font-family: $font-header;
   color:white;
   padding-top: 40px;
-  @media screen and (min-width: $break-415) {
+  @media screen and (max-width: $break-415) {
   font-size: 6rem;
   }
 }
@@ -141,9 +148,9 @@ ul{
   color:white;
   ul {
     font-size: 1.5rem;
-  }
-  @media screen and (max-width: $break-415) {
-  display: none;
+    @media screen and (max-width: $break-415) {
+    display: none;
+    }
   }
 }
 
@@ -252,14 +259,21 @@ ul{
     display: inline-block;
     padding-bottom: 3%;
     margin:0;
-    @media screen and (max-width: $break-1024) {
+    @media screen and (min-width: $break-415) and (max-width: $break-1024) {
     top: -2px;
+    }
+    @media screen and (max-width: $break-415) {
+    display: none;
     }
   }
   i {
     color:white;
     display:inline-block;
     padding-left: 8%;
+    @media screen and (max-width: $break-415) {
+      text-align: center;
+      display:block;
+    }
   }
   ul {
     font-size: 1.1em;
@@ -283,8 +297,11 @@ ul{
   @media screen and (min-width: $break-1920) {
   font-size: 3rem;
   }
-  @media screen and (max-width: $break-1024) {
+  @media screen and (min-width: $break-415) and (max-width: $break-1024) {
   font-size: 1.5rem;
+  }
+  @media screen and (max-width: $break-415) {
+  display: none;
   }
 }
 
@@ -315,6 +332,14 @@ ul{
   @media screen and (min-width: $break-1600) {
   padding-bottom: 7%;
   }
+  @media screen and (max-width: $break-415) {
+    display: inline-block;
+    height: 28px;
+    bottom: 33px;
+    margin: 0;
+    height: 230px;
+    width: 48%;
+  }
 
   h1 {
     font-family: $font-header;
@@ -324,17 +349,24 @@ ul{
   p {
     font-size: 1.8rem;
     text-align: center;
+    @media screen and (max-width: $break-415) {
+      font-size: 1.3rem
+    }
   }
 }
 #charleston {
   background-image: url("../charleston.jpg");
-  padding-bottom: 11%;
+  padding-bottom: 7.5%;
   background-size: cover;
   border-radius: 10px;
   margin-left: 5%;
   width:45%;
   color:white;
-  @media screen and (max-width: $break-1024) {
+  @media screen and (max-width: $break-415) {
+  display: inline-block;
+  height:230px;
+  }
+  @media screen and (min-width: $break-415) and (max-width: $break-1024) {
   padding-bottom: 7%;
   }
   @media screen and (min-width: $break-1440) {
@@ -353,6 +385,9 @@ ul{
   p {
     font-size: 1.8rem;
     text-align: center;
+    @media screen and (max-width: $break-415) {
+    font-size: 1.3rem;
+    }
   }
 }
 
@@ -362,7 +397,11 @@ ul{
   padding-bottom: 12%;
   border-radius: 10px;
   background-position: center;
-  @media screen and (max-width: $break-1024) {
+  @media screen and (max-width: $break-415) {
+  padding-bottom: 22%;
+  margin-top:-5%;
+  }
+  @media screen and (min-width: $break-415) and (max-width: $break-1024) {
   padding-bottom: 15%;
   }
   @media screen and (min-width: $break-1440) {
@@ -394,7 +433,11 @@ ul{
   background-repeat: no-repeat;
   background-position: 0 17%;
   border-radius: 10px;
-  @media screen and (max-width: $break-1024) {
+  @media screen and (max-width: $break-415) {
+  margin-top: -6%;
+  padding-bottom: 40%;
+  }
+  @media screen and (min-width: $break-415) and (max-width: $break-1024) {
   padding-bottom: 15%;
   }
   @media screen and (min-width: $break-1440) {
@@ -413,7 +456,10 @@ ul{
     text-align: right;
     padding-right: 3%;
     color: white;
-    @media screen and (max-width: $break-1024) {
+    @media screen and (max-width: $break-415) {
+      text-shadow: 0 0 2px black;
+    }
+    @media screen and (min-width: $break-415) and (max-width: $break-1024) {
       font-size: 2.2em;
       padding-right: 2%;
     }
@@ -423,7 +469,10 @@ ul{
     text-align: right;
     padding-right: 3%;
     color:white;
-    @media screen and (max-width: $break-1024) {
+    @media screen and (max-width: $break-415) {
+    text-shadow: 0 0 2px black;
+    }
+    @media screen and (min-width: $break-415) and (max-width: $break-1024) {
       padding:0;
     }
   }
@@ -435,6 +484,11 @@ ul{
   background-repeat: no-repeat;
   padding-bottom: 5%;
   border-radius: 10px;
+  @media screen and (max-width: $break-415) {
+  background-size: 230%;
+  margin-top: -6%;
+  background-position-x: -200px;
+  }
   @media screen and (min-width: $break-1440) {
   padding-bottom: 4%;
   }
@@ -473,7 +527,7 @@ ul{
 #max {
   margin-top: -3.7%;
   margin-bottom: 3%;
-  @media screen and (max-width: $break-1024) {
+  @media screen and (min-width: $break-415) and (max-width: $break-1024) {
     margin-top: -10%;
   }
 
@@ -508,7 +562,7 @@ ul{
 }
 #krause {
   margin-top: 9%;
-  @media screen and (max-width: $break-1024) {
+  @media screen and (min-width: $break-415) and (max-width: $break-1024) {
     margin-top: 12.5%;
   }
   @media screen and (min-width: $break-1440) {
