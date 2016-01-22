@@ -6,10 +6,18 @@ body {
   width:100%;
 }
 
+a {
+
+  &:hover{
+    text-shadow: 0 0 1px white
+              0 0 3px white
+              0 0 5px white;
+            }
+}
+
 ul{
   display: inline-block;
 }
-
 
 .headerBar {
   background-color: rgba(#000000, 0.6);
@@ -121,9 +129,33 @@ ul{
   }
 }
 
+#col1Crowd {
+  padding-bottom: 10%;
+}
+#col1Photo {
+  padding-bottom: 15%;
+}
+#col1Bucket {
+  padding-bottom: 10%;
+}
+
+#col2Crowd {
+  padding-bottom: 7%;
+}
+#col2Photo {
+  padding-bottom: 10%;
+}
+#col2Bucket {
+  padding-bottom: 5%;
+}
+
 .projCols {
   color:white;
   border-right: 1px solid white;
+  img{
+    width:37%;
+    padding-top: 2%;
+  }
   .projTitle {
     top: -16px;
     position:relative;
@@ -149,11 +181,9 @@ ul{
   }
 }
 #videoLink {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  text-decoration: underline;
   font-style: $font-subheader;
-
 }
 
 #videoModal {
@@ -172,6 +202,113 @@ ul{
     font-family: $font-subheader;
   }
 }
+#chicago {
+  background-image: url("../chicago.jpg");
+  padding-bottom: 10%;
+  background-size: cover;
+  border-radius: 10px;
+  width:45%;
+  margin-right: 5%;
+  color:white;
+
+  h1{
+    font-family: $font-header;
+    text-align: center;
+    color:white;
+  }
+  p{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+}
+#charleston {
+  background-image: url("../charleston.jpg");
+  padding-bottom: 7%;
+  background-size: cover;
+  border-radius: 10px;
+  margin-left: 5%;
+  width:45%;
+  color:white;
+
+  ;
+  h1{
+    font-family: $font-header;
+    text-align: center;
+  }
+  p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+#ashley {
+  background-image: url("../charlestonWed.jpg");
+  background-size: cover;
+  padding-bottom: 12%;
+  border-radius: 10px;
+  background-position: center;
+  h1{
+    font-family: $font-header;
+    text-align: right;
+    padding-right: 3%;
+  }
+  p{
+    font-size: 1.8rem;
+    text-align: right;
+    padding-right: 3%;
+  }
+}
+
+#bearPear{
+  background-image: url("../bearPear.jpg");
+  background-size:60%;
+  padding-bottom: 12%;
+  background-repeat: no-repeat;
+  background-position: 0 17%;
+
+
+
+  h1{
+    font-family: $font-header;
+    text-align: right;
+    padding-right: 3%;
+    color: white;
+  }
+  p{
+    font-size: 1.8rem;
+    text-align: right;
+    padding-right: 3%;
+    color:white;
+  }
+}
+
+///MY SECTION///
+#me {
+  background-image: url("../me.jpg");
+  background-size: 144%;
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+  border-radius: 10px;
+  h1{
+    font-family: $font-header;
+    text-align: right;
+    padding-right: 3%;
+    color: black;
+  }
+  p{
+    font-family: $font-header;
+    font-size: 1.8rem;
+    padding-right: 3%;
+    color:black;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
 
 ///REST OF NAME STUFF/////
 .name {

@@ -1,6 +1,9 @@
 body {
   width: 100%; }
 
+a:hover {
+  text-shadow: 0 0 1px white 0 0 3px white 0 0 5px white; }
+
 ul {
   display: inline-block; }
 
@@ -90,9 +93,30 @@ h2 {
     color: white;
     font-family: "Fugaz One", cursive; }
 
+#col1Crowd {
+  padding-bottom: 10%; }
+
+#col1Photo {
+  padding-bottom: 15%; }
+
+#col1Bucket {
+  padding-bottom: 10%; }
+
+#col2Crowd {
+  padding-bottom: 7%; }
+
+#col2Photo {
+  padding-bottom: 10%; }
+
+#col2Bucket {
+  padding-bottom: 5%; }
+
 .projCols {
   color: white;
   border-right: 1px solid white; }
+  .projCols img {
+    width: 37%;
+    padding-top: 2%; }
   .projCols .projTitle {
     top: -16px;
     position: relative;
@@ -113,9 +137,8 @@ h2 {
     text-align: center; }
 
 #videoLink {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  text-decoration: underline;
   font-style: "Fugaz One", cursive; }
 
 #videoModal .modal-content {
@@ -126,6 +149,87 @@ h2 {
   #interests h2 {
     color: white;
     font-family: "Fugaz One", cursive; }
+
+#chicago {
+  background-image: url("../chicago.jpg");
+  padding-bottom: 10%;
+  background-size: cover;
+  border-radius: 10px;
+  width: 45%;
+  margin-right: 5%;
+  color: white; }
+  #chicago h1 {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    color: white; }
+  #chicago p {
+    font-size: 1.8rem;
+    text-align: center; }
+
+#charleston {
+  background-image: url("../charleston.jpg");
+  padding-bottom: 7%;
+  background-size: cover;
+  border-radius: 10px;
+  margin-left: 5%;
+  width: 45%;
+  color: white; }
+  #charleston h1 {
+    font-family: "Raleway", sans-serif;
+    text-align: center; }
+  #charleston p {
+    font-size: 1.8rem;
+    text-align: center; }
+
+#ashley {
+  background-image: url("../charlestonWed.jpg");
+  background-size: cover;
+  padding-bottom: 12%;
+  border-radius: 10px;
+  background-position: center; }
+  #ashley h1 {
+    font-family: "Raleway", sans-serif;
+    text-align: right;
+    padding-right: 3%; }
+  #ashley p {
+    font-size: 1.8rem;
+    text-align: right;
+    padding-right: 3%; }
+
+#bearPear {
+  background-image: url("../bearPear.jpg");
+  background-size: 60%;
+  padding-bottom: 12%;
+  background-repeat: no-repeat;
+  background-position: 0 17%; }
+  #bearPear h1 {
+    font-family: "Raleway", sans-serif;
+    text-align: right;
+    padding-right: 3%;
+    color: white; }
+  #bearPear p {
+    font-size: 1.8rem;
+    text-align: right;
+    padding-right: 3%;
+    color: white; }
+
+#me {
+  background-image: url("../me.jpg");
+  background-size: 144%;
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+  border-radius: 10px; }
+  #me h1 {
+    font-family: "Raleway", sans-serif;
+    text-align: right;
+    padding-right: 3%;
+    color: black; }
+  #me p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.8rem;
+    padding-right: 3%;
+    color: black;
+    text-align: center; }
 
 .name {
   width: auto;
