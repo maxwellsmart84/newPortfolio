@@ -142,6 +142,9 @@ ul{
   ul {
     font-size: 1.5rem;
   }
+  @media screen and (max-width: $break-415) {
+  display: none;
+  }
 }
 
 .jobTitle {
@@ -225,6 +228,9 @@ ul{
   img{
     width:37%;
     padding-top: 2%;
+    @media screen and (max-width: $break-415) {
+    display: none;
+    }
     @media screen and (min-width: $break-1440) {
     padding-top:0;
     }
@@ -257,12 +263,17 @@ ul{
   }
   ul {
     font-size: 1.1em;
-    float:bottom
-
+    float:bottom;
+    @media screen and (max-width: $break-415) {
+    display: none;
+    }
   }
   h3 {
     font-size: 1em;
     text-align: center;
+    @media screen and (max-width: $break-415) {
+    display: none;
+    }
   }
 }
 #videoLink {

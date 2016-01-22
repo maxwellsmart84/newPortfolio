@@ -110,6 +110,9 @@ h2 {
   color: white; }
   .expCols ul {
     font-size: 1.5rem; }
+  @media screen and (max-width: 415px) {
+    .expCols {
+      display: none; } }
 
 .jobTitle {
   font-size: 3rem;
@@ -177,6 +180,9 @@ h2 {
   .projCols img {
     width: 37%;
     padding-top: 2%; }
+    @media screen and (max-width: 415px) {
+      .projCols img {
+        display: none; } }
     @media screen and (min-width: 1440px) {
       .projCols img {
         padding-top: 0; } }
@@ -207,9 +213,15 @@ h2 {
   .projCols ul {
     font-size: 1.1em;
     float: bottom; }
+    @media screen and (max-width: 415px) {
+      .projCols ul {
+        display: none; } }
   .projCols h3 {
     font-size: 1em;
     text-align: center; }
+    @media screen and (max-width: 415px) {
+      .projCols h3 {
+        display: none; } }
 
 #videoLink {
   font-size: 2rem;
