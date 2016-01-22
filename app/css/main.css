@@ -42,6 +42,9 @@ ul {
 #allCarousels {
   z-index: 1;
   margin-top: -55%; }
+  @media screen and (min-width: 1024px) {
+    #allCarousels {
+      margin-top: -62%; } }
   @media screen and (min-width: 1440px) {
     #allCarousels {
       margin-top: -47%; } }
@@ -188,6 +191,9 @@ h2 {
     display: inline-block;
     padding-bottom: 3%;
     margin: 0; }
+    @media screen and (min-width: 1024px) {
+      .projCols .projTitle {
+        top: -2px; } }
   .projCols i {
     color: white;
     display: inline-block;
@@ -206,6 +212,9 @@ h2 {
   @media screen and (min-width: 1920px) {
     #videoLink {
       font-size: 3rem; } }
+  @media screen and (min-width: 1024px) {
+    #videoLink {
+      font-size: 1.5rem; } }
 
 #videoModal .modal-content {
   margin-left: 11%; }
@@ -246,6 +255,9 @@ h2 {
   margin-left: 5%;
   width: 45%;
   color: white; }
+  @media screen and (min-width: 1024px) {
+    #charleston {
+      padding-bottom: 7%; } }
   @media screen and (min-width: 1440px) {
     #charleston {
       padding-bottom: 8%; } }
@@ -268,6 +280,9 @@ h2 {
   padding-bottom: 12%;
   border-radius: 10px;
   background-position: center; }
+  @media screen and (min-width: 1024px) {
+    #ashley {
+      padding-bottom: 15%; } }
   @media screen and (min-width: 1440px) {
     #ashley {
       padding-bottom: 11%; } }
@@ -294,6 +309,9 @@ h2 {
   background-repeat: no-repeat;
   background-position: 0 17%;
   border-radius: 10px; }
+  @media screen and (min-width: 1024px) {
+    #bearPear {
+      padding-bottom: 15%; } }
   @media screen and (min-width: 1440px) {
     #bearPear {
       padding-bottom: 11%; } }
@@ -309,11 +327,18 @@ h2 {
     text-align: right;
     padding-right: 3%;
     color: white; }
+    @media screen and (min-width: 1024px) {
+      #bearPear h1 {
+        font-size: 2.2em;
+        padding-right: 2%; } }
   #bearPear p {
     font-size: 1.8rem;
     text-align: right;
     padding-right: 3%;
     color: white; }
+    @media screen and (min-width: 1024px) {
+      #bearPear p {
+        padding: 0; } }
 
 #me {
   background-image: url("../me.jpg");
@@ -348,12 +373,15 @@ h2 {
   margin-left: 15%;
   z-index: -1;
   font-size: 8em;
-  color: rgba(186, 185, 185, 0);
+  color: #bab9b9;
   letter-spacing: 30px; }
 
 #max {
   margin-top: -3.7%;
   margin-bottom: 3%; }
+  @media screen and (min-width: 1024px) {
+    #max {
+      margin-top: -10%; } }
   @media screen and (min-width: 1440px) {
     #max {
       margin-left: 15%; } }
@@ -385,6 +413,9 @@ h2 {
 
 #krause {
   margin-top: 9%; }
+  @media screen and (min-width: 1024px) {
+    #krause {
+      margin-top: 12.5%; } }
   @media screen and (min-width: 1440px) {
     #krause {
       margin-top: 8%;

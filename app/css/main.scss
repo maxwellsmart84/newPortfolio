@@ -2,6 +2,7 @@ $font-header: "Raleway", sans-serif;
 $font-subheader: "Fugaz One", cursive;
 
 $break-400: 400px;
+$break-1024: 1024px;
 $break-1440: 1440px;
 $break-1600: 1600px;
 $break-1680: 1680px;
@@ -63,6 +64,9 @@ ul{
 #allCarousels{
   z-index:1;
   margin-top: -55%;
+  @media screen and (min-width: $break-1024) {
+  margin-top: -62%;
+  }
   @media screen and (min-width: $break-1440) {
   margin-top: -47%;
   }
@@ -236,6 +240,9 @@ ul{
     display: inline-block;
     padding-bottom: 3%;
     margin:0;
+    @media screen and (min-width: $break-1024) {
+    top: -2px;
+    }
   }
   i {
     color:white;
@@ -258,6 +265,9 @@ ul{
   font-style: $font-subheader;
   @media screen and (min-width: $break-1920) {
   font-size: 3rem;
+  }
+  @media screen and (min-width: $break-1024) {
+  font-size: 1.5rem;
   }
 }
 
@@ -307,6 +317,9 @@ ul{
   margin-left: 5%;
   width:45%;
   color:white;
+  @media screen and (min-width: $break-1024) {
+  padding-bottom: 7%;
+  }
   @media screen and (min-width: $break-1440) {
     padding-bottom: 8%;
   }
@@ -332,6 +345,9 @@ ul{
   padding-bottom: 12%;
   border-radius: 10px;
   background-position: center;
+  @media screen and (min-width: $break-1024) {
+  padding-bottom: 15%;
+  }
   @media screen and (min-width: $break-1440) {
   padding-bottom: 11%;
   }
@@ -361,6 +377,9 @@ ul{
   background-repeat: no-repeat;
   background-position: 0 17%;
   border-radius: 10px;
+  @media screen and (min-width: $break-1024) {
+  padding-bottom: 15%;
+  }
   @media screen and (min-width: $break-1440) {
   padding-bottom: 11%;
   }
@@ -377,12 +396,19 @@ ul{
     text-align: right;
     padding-right: 3%;
     color: white;
+    @media screen and (min-width: $break-1024) {
+      font-size: 2.2em;
+      padding-right: 2%;
+    }
   }
   p {
     font-size: 1.8rem;
     text-align: right;
     padding-right: 3%;
     color:white;
+    @media screen and (min-width: $break-1024) {
+      padding:0;
+    }
   }
 }
 
@@ -423,13 +449,17 @@ ul{
     margin-left: 15%;
     z-index: -1;
     font-size: 8em;
-    color:rgba(#bab9b9, 0);
+    color:rgba(#bab9b9, 1);
     letter-spacing: 30px;
 }
 
 #max {
   margin-top: -3.7%;
   margin-bottom: 3%;
+  @media screen and (min-width: $break-1024) {
+    margin-top: -10%;
+  }
+
   @media screen and (min-width: $break-1440) {
   margin-left:15%;
   }
@@ -461,6 +491,9 @@ ul{
 }
 #krause {
   margin-top: 9%;
+  @media screen and (min-width: $break-1024) {
+    margin-top: 12.5%;
+  }
   @media screen and (min-width: $break-1440) {
   margin-top: 8%;
   margin-left: 13.5%;

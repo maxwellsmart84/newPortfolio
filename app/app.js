@@ -31,6 +31,10 @@ var page = {
     letterPosition: function (){
       var windowSize = $(window).width();
       console.log(windowSize);
+      if (windowSize <= 1024){
+        mRight = "32%";
+        kRight = "56.5%";
+      }
       if (windowSize >= 1600){
         console.log("if statement", windowSize);
         mRight = "36%";
@@ -41,7 +45,7 @@ var page = {
        lRight = "47%";
        kRight = "52.5%";
      }
-    },
+   },
 
    initialAnim: function (){
      var tl = new TimelineMax ();
