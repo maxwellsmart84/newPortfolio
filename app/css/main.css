@@ -18,7 +18,7 @@ ul {
   height: 0; }
   .headerBar i {
     color: rgba(255, 255, 255, 0);
-    padding: 1%;
+    padding: 2%;
     text-align: center;
     padding: 10%; }
     @media screen and (min-width: 1600px) {
@@ -32,6 +32,8 @@ ul {
   text-align: center;
   display: block;
   height: 200px; }
+  #headerInit:hover {
+    cursor: pointer; }
   #headerInit .initials {
     font-size: 13em;
     font-family: "Raleway", sans-serif;
