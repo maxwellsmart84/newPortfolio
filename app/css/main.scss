@@ -201,6 +201,10 @@ ul{
     padding-bottom: 8.5%;
   }
 }
+.col3Link {
+  margin-top: 60px;
+  text-align: center;
+}
 
 #col1Photo {
   padding-bottom: 15%;
@@ -304,10 +308,26 @@ ul{
     }
   }
 }
+.projLink {
+    font-size: 2rem;
+    font-style: $font-subheader;
+    &:hover{
+      cursor: pointer;
+    }
+  @media screen and (min-width: $break-1920) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: $break-415) and (max-width: $break-1024) {
+    font-size: 1.5rem;
+  }
+}
 #videoLink {
   font-size: 2rem;
   text-align: center;
   font-style: $font-subheader;
+  &:hover {
+    cursor: pointer;
+  }
   @media screen and (min-width: $break-1920) {
   font-size: 3rem;
   }

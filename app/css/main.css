@@ -152,6 +152,10 @@ h2 {
     #col2Crowd {
       padding-bottom: 8.5%; } }
 
+.col3Link {
+  margin-top: 60px;
+  text-align: center; }
+
 #col1Photo {
   padding-bottom: 15%; }
   @media screen and (min-width: 1600px) {
@@ -243,10 +247,24 @@ h2 {
       .projCols h3 {
         display: none; } }
 
+.projLink {
+  font-size: 2rem;
+  font-style: "Fugaz One", cursive; }
+  .projLink:hover {
+    cursor: pointer; }
+  @media screen and (min-width: 1920px) {
+    .projLink {
+      font-size: 3rem; } }
+  @media screen and (min-width: 415px) and (max-width: 1024px) {
+    .projLink {
+      font-size: 1.5rem; } }
+
 #videoLink {
   font-size: 2rem;
   text-align: center;
   font-style: "Fugaz One", cursive; }
+  #videoLink:hover {
+    cursor: pointer; }
   @media screen and (min-width: 1920px) {
     #videoLink {
       font-size: 3rem; } }
