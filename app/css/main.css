@@ -28,12 +28,14 @@ ul {
       .headerBar i {
         padding: 58% 10%; } }
 
+.columnVert {
+  display: flex;
+  flex-direction: column; }
+
 #headerInit {
   text-align: center;
   display: block;
   height: 200px; }
-  #headerInit:hover {
-    cursor: pointer; }
   #headerInit .initials {
     font-size: 13em;
     font-family: "Raleway", sans-serif;
@@ -42,6 +44,15 @@ ul {
     @media screen and (max-width: 415px) {
       #headerInit .initials {
         font-size: 9em; } }
+    @media screen and (max-width: 1600px) {
+      #headerInit .initials {
+        font-size: 15em; } }
+    @media screen and (max-width: 1440px) {
+      #headerInit .initials {
+        font-size: 14em; } }
+    @media screen and (max-width: 1920px) {
+      #headerInit .initials {
+        font-size: 15em; } }
 
 #allCarousels {
   z-index: 1;
@@ -77,9 +88,15 @@ ul {
   height: 300px;
   border-radius: 20px;
   margin-bottom: 1%; }
-  @media screen and (max-width: 415px) {
+  @media screen and (max-width: 1920px) {
     .section {
-      margin-left: 2%; } }
+      height: 370px; } }
+  @media screen and (max-width: 1600px) {
+    .section {
+      height: 360px; } }
+  @media screen and (max-width: 1440px) {
+    .section {
+      height: 325px; } }
 
 .carousel-indicators {
   bottom: 5px; }
@@ -265,15 +282,6 @@ h2 {
   font-style: "Fugaz One", cursive; }
   #videoLink:hover {
     cursor: pointer; }
-  @media screen and (min-width: 1920px) {
-    #videoLink {
-      font-size: 3rem; } }
-  @media screen and (min-width: 415px) and (max-width: 1024px) {
-    #videoLink {
-      font-size: 1.5rem; } }
-  @media screen and (max-width: 415px) {
-    #videoLink {
-      display: none; } }
 
 #videoModal .modal-content {
   margin-left: 11%; }
@@ -285,19 +293,18 @@ h2 {
     font-family: "Fugaz One", cursive; }
 
 #chicago {
-  background-image: url("../chicago.jpg");
+  background-image: url("../chicago2.jpg");
   padding-bottom: 10%;
-  background-size: cover;
+  background-position: center;
+  background-size: 45% contain;
   border-radius: 10px;
   width: 45%;
-  margin-right: 5%;
-  color: white; }
-  @media screen and (min-width: 1440px) {
-    #chicago {
-      padding-bottom: 8%; } }
-  @media screen and (min-width: 1600px) {
-    #chicago {
-      padding-bottom: 7%; } }
+  color: white;
+  overflow: hidden;
+  margin-right: 4%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  padding-left: 1%; }
   @media screen and (max-width: 415px) {
     #chicago {
       display: inline-block;
@@ -314,8 +321,7 @@ h2 {
       padding: 0; } }
   #chicago h1 {
     font-family: "Raleway", sans-serif;
-    text-align: center;
-    color: white; }
+    text-align: center; }
     @media screen and (max-width: 320px) {
       #chicago h1 {
         font-size: 2rem; } }
@@ -328,15 +334,21 @@ h2 {
     @media screen and (max-width: 320px) {
       #chicago p {
         font-size: 1.2rem; } }
+    @media screen and (min-width: 1600px) {
+      #chicago p {
+        font-size: 2.2rem; } }
 
 #charleston {
   background-image: url("../charleston.jpg");
-  padding-bottom: 7.5%;
-  background-size: cover;
+  padding-bottom: 10%;
   border-radius: 10px;
-  margin-left: 5%;
   width: 45%;
-  color: white; }
+  max-width: 45%;
+  color: white;
+  margin-left: 4%;
+  overflow: hidden;
+  display: inline-block;
+  background-repeat: no-repeat; }
   @media screen and (max-width: 320px) {
     #charleston {
       display: inline-block;
@@ -347,18 +359,6 @@ h2 {
       display: inline-block;
       height: 230px;
       margin-left: 1%; } }
-  @media screen and (min-width: 416px) and (max-width: 1024px) {
-    #charleston {
-      padding-bottom: 7%; } }
-  @media screen and (min-width: 1440px) {
-    #charleston {
-      padding-bottom: 8%; } }
-  @media screen and (min-width: 1600px) {
-    #charleston {
-      padding-bottom: 7%; } }
-  @media screen and (min-width: 1920px) {
-    #charleston {
-      padding-bottom: 5.4%; } }
   #charleston h1 {
     font-family: "Raleway", sans-serif;
     text-align: center; }
@@ -378,6 +378,9 @@ h2 {
         font-size: 1.2rem;
         position: relative;
         bottom: 20px; } }
+    @media screen and (min-width: 1600px) {
+      #charleston p {
+        font-size: 2.2rem; } }
 
 #ashley {
   background-image: url("../charlestonWed.jpg");
@@ -385,27 +388,9 @@ h2 {
   padding-bottom: 12%;
   border-radius: 10px;
   background-position: center; }
-  @media screen and (max-width: 320px) {
-    #ashley {
-      padding-bottom: 17%;
-      margin-top: -5%; } }
-  @media screen and (min-width: 321px) and (max-width: 415px) {
-    #ashley {
-      padding-bottom: 22%;
-      margin-top: -5%; } }
-  @media screen and (min-width: 415px) and (max-width: 1024px) {
-    #ashley {
-      padding-bottom: 15%; } }
-  @media screen and (min-width: 1440px) {
-    #ashley {
-      padding-bottom: 11%; } }
   @media screen and (min-width: 1600px) {
     #ashley {
-      padding-bottom: 9%; } }
-  @media screen and (min-width: 1920px) {
-    #ashley {
-      padding-bottom: 7.5%;
-      background-position: 0 55%; } }
+      padding-bottom: 13%; } }
   #ashley h1 {
     font-family: "Raleway", sans-serif;
     text-align: right;
@@ -414,6 +399,9 @@ h2 {
     font-size: 1.8rem;
     text-align: right;
     padding-right: 3%; }
+  @media screen and (min-width: 1600px) {
+    #ashley {
+      font-size: 2.2rem; } }
 
 #bearPear {
   background-image: url("../bearPear.jpg");
@@ -433,16 +421,9 @@ h2 {
   @media screen and (min-width: 416px) and (max-width: 1024px) {
     #bearPear {
       padding-bottom: 15%; } }
-  @media screen and (min-width: 1440px) {
-    #bearPear {
-      padding-bottom: 11%; } }
   @media screen and (min-width: 1600px) {
     #bearPear {
-      padding-bottom: 9%; } }
-  @media screen and (min-width: 1920px) {
-    #bearPear {
-      background-size: 50%;
-      padding-bottom: 7.5%; } }
+      padding-bottom: 12.5%; } }
   #bearPear h1 {
     font-family: "Raleway", sans-serif;
     text-align: right;
@@ -460,6 +441,9 @@ h2 {
     text-align: right;
     padding-right: 3%;
     color: white; }
+    @media screen and (min-width: 1600px) {
+      #bearPear p {
+        font-size: 2.2rem; } }
     @media screen and (max-width: 415px) {
       #bearPear p {
         text-shadow: 0 0 2px black; } }
@@ -468,47 +452,30 @@ h2 {
         padding: 0; } }
 
 #me {
-  background-image: url("../me.jpg");
-  background-size: 144%;
+  background-image: url("../menew.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 5%;
+  padding-bottom: 9.5%;
   border-radius: 10px; }
-  @media screen and (max-width: 320px) {
-    #me {
-      background-size: cover; } }
-  @media screen and (min-width: 321px) and (max-width: 415px) {
-    #me {
-      background-size: 230%;
-      margin-top: -6%;
-      background-position-x: -200px; } }
-  @media screen and (min-width: 1440px) {
-    #me {
-      padding-bottom: 4%; } }
-  @media screen and (min-width: 1600px) {
-    #me {
-      padding-bottom: 3%; } }
-  @media screen and (min-width: 1920px) {
-    #me {
-      background-size: 100%;
-      padding-bottom: 2.5%; } }
   #me h1 {
     font-family: "Raleway", sans-serif;
     text-align: right;
     padding-right: 3%;
-    color: black; }
-    @media screen and (max-width: 360px) {
-      #me h1 {
-        color: white; } }
+    color: white;
+    margin: 0;
+    font-size: 4rem; }
   #me p {
     font-family: "Raleway", sans-serif;
     font-size: 1.8rem;
     padding-right: 3%;
-    color: black;
+    color: white;
     text-align: center; }
     @media screen and (max-width: 360px) {
       #me p {
-        color: white;
         font-size: 1.3rem; } }
+    @media screen and (min-width: 1600px) {
+      #me p {
+        font-size: 2.2rem; } }
 
 .name {
   width: auto;

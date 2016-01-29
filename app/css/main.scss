@@ -54,14 +54,14 @@ ul{
 }
 
 
-
+.columnVert {
+  display:flex;
+  flex-direction: column;
+}
 #headerInit {
   text-align: center;
   display: block;
   height:200px;
-  &:hover {
-    cursor: pointer;
-  }
   .initials {
     font-size: 13em;
     font-family: $font-header;
@@ -69,6 +69,15 @@ ul{
     position:relative;
     @media screen and (max-width: $break-415) {
     font-size: 9em;
+    }
+    @media screen and (max-width: $break-1600) {
+    font-size: 15em;
+    }
+    @media screen and (max-width: $break-1440) {
+    font-size:14em;
+    }
+    @media screen and (max-width: $break-1920) {
+    font-size: 15em;
     }
   }
 }
@@ -107,9 +116,18 @@ ul{
   height:300px;
   border-radius: 20px;
   margin-bottom: 1%;
-  @media screen and (max-width: $break-415) {
-  margin-left: 2%;
+  @media screen and (max-width: $break-1920) {
+  height:370px;
   }
+  @media screen and (max-width: $break-1600) {
+  height:360px;
+  }
+  @media screen and (max-width: $break-1440) {
+  height:325px;
+  }
+  // @media screen and (max-width: $break-415) {
+  // margin-left: 2%;
+  // }
 }
 
 .carousel-indicators {
@@ -328,15 +346,15 @@ ul{
   &:hover {
     cursor: pointer;
   }
-  @media screen and (min-width: $break-1920) {
-  font-size: 3rem;
-  }
-  @media screen and (min-width: $break-415) and (max-width: $break-1024) {
-  font-size: 1.5rem;
-  }
-  @media screen and (max-width: $break-415) {
-  display: none;
-  }
+  // @media screen and (min-width: $break-1920) {
+  // font-size: 3rem;
+  // }
+  // @media screen and (min-width: $break-415) and (max-width: $break-1024) {
+  // font-size: 1.5rem;
+  // }
+  // @media screen and (max-width: $break-415) {
+  // display: none;
+  // }
 }
 
 #videoModal {
@@ -353,19 +371,24 @@ ul{
   }
 }
 #chicago {
-  background-image: url("../chicago.jpg");
+  background-image: url("../chicago2.jpg");
   padding-bottom: 10%;
-  background-size: cover;
+  background-position: center;
+  background-size:  45% contain;
   border-radius: 10px;
   width:45%;
-  margin-right: 5%;
   color:white;
-  @media screen and (min-width: $break-1440) {
-  padding-bottom: 8%;
-  }
-  @media screen and (min-width: $break-1600) {
-  padding-bottom: 7%;
-  }
+  overflow: hidden;
+  margin-right: 4%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  padding-left: 1%;
+  // @media screen and (min-width: $break-1440) {
+  // padding-bottom: 8%;
+  // }
+  // @media screen and (min-width: $break-1600) {
+  // padding-bottom: 7%;
+  // }
   @media screen and (max-width: $break-415) {
     display: inline-block;
     height: 230px;
@@ -384,7 +407,6 @@ ul{
   h1 {
     font-family: $font-header;
     text-align: center;
-    color:white;
     @media screen and (max-width: $break-320){
       font-size: 2rem
       }
@@ -398,16 +420,22 @@ ul{
     @media screen and (max-width: $break-320){
       font-size: 1.2rem;
     }
+    @media screen and (min-width: $break-1600) {
+      font-size: 2.2rem;
+    }
   }
 }
 #charleston {
   background-image: url("../charleston.jpg");
-  padding-bottom: 7.5%;
-  background-size: cover;
+  padding-bottom: 10%;
   border-radius: 10px;
-  margin-left: 5%;
   width:45%;
+  max-width: 45%;
   color:white;
+  margin-left: 4%;
+  overflow: hidden;
+  display: inline-block;
+  background-repeat: no-repeat;
   @media screen and (max-width: $break-320){
     display: inline-block;
     height:200px;
@@ -418,18 +446,18 @@ ul{
   height:230px;
   margin-left: 1%;
   }
-  @media screen and (min-width: 416px) and (max-width: $break-1024) {
-  padding-bottom: 7%;
-  }
-  @media screen and (min-width: $break-1440) {
-    padding-bottom: 8%;
-  }
-  @media screen and (min-width: $break-1600) {
-    padding-bottom: 7%;
-  }
-  @media screen and (min-width: $break-1920) {
-    padding-bottom: 5.4%;
-  }
+  // @media screen and (min-width: 416px) and (max-width: $break-1024) {
+  // padding-bottom: 7%;
+  // }
+  // @media screen and (min-width: $break-1440) {
+  //   padding-bottom: 8%;
+  // }
+  // @media screen and (min-width: $break-1600) {
+  //   padding-bottom: 7%;
+  // }
+  // @media screen and (min-width: $break-1920) {
+  //   padding-bottom: 5.4%;
+  // }
   h1{
     font-family: $font-header;
     text-align: center;
@@ -450,6 +478,9 @@ ul{
       position: relative;
       bottom: 20px;
     }
+    @media screen and (min-width: $break-1600) {
+      font-size: 2.2rem;
+    }
   }
 }
 
@@ -459,27 +490,27 @@ ul{
   padding-bottom: 12%;
   border-radius: 10px;
   background-position: center;
-  @media screen and (max-width: $break-320){
-  padding-bottom: 17%;
-  margin-top:-5%;
-  }
-  @media screen and (min-width: 321px) and (max-width: $break-415) {
-  padding-bottom: 22%;
-  margin-top:-5%;
-  }
-  @media screen and (min-width: $break-415) and (max-width: $break-1024) {
-  padding-bottom: 15%;
-  }
-  @media screen and (min-width: $break-1440) {
-  padding-bottom: 11%;
-  }
+  // @media screen and (max-width: $break-320){
+  // padding-bottom: 17%;
+  // margin-top:-5%;
+  // }
+  // @media screen and (min-width: 321px) and (max-width: $break-415) {
+  // padding-bottom: 22%;
+  // margin-top:-5%;
+  // }
+  // @media screen and (min-width: $break-415) and (max-width: $break-1024) {
+  // padding-bottom: 15%;
+  // }
+  // @media screen and (min-width: $break-1440) {
+  // padding-bottom: 11%;
+  // }
   @media screen and (min-width: $break-1600) {
-  padding-bottom: 9%;
+  padding-bottom: 13%;
   }
-  @media screen and (min-width: $break-1920) {
-  padding-bottom: 7.5%;
-  background-position: 0 55%;
-  }
+  // @media screen and (min-width: $break-1920) {
+  // padding-bottom: 7.5%;
+  // background-position: 0 55%;
+  // }
   h1{
     font-family: $font-header;
     text-align: right;
@@ -489,6 +520,9 @@ ul{
     font-size: 1.8rem;
     text-align: right;
     padding-right: 3%;
+  }
+  @media screen and (min-width: $break-1600) {
+    font-size: 2.2rem;
   }
 }
 
@@ -510,16 +544,16 @@ ul{
   @media screen and (min-width: 416px) and (max-width: $break-1024) {
   padding-bottom: 15%;
   }
-  @media screen and (min-width: $break-1440) {
-  padding-bottom: 11%;
-  }
+  // @media screen and (min-width: $break-1440) {
+  // padding-bottom: 11%;
+  // }
   @media screen and (min-width: $break-1600) {
-  padding-bottom: 9%;
+  padding-bottom: 12.5%;
   }
-  @media screen and (min-width: $break-1920) {
-    background-size: 50%;
-    padding-bottom: 7.5%;
-  }
+  // @media screen and (min-width: $break-1920) {
+  //   background-size: 50%;
+  //   padding-bottom: 7.5%;
+  // }
 
   h1 {
     font-family: $font-header;
@@ -539,6 +573,9 @@ ul{
     text-align: right;
     padding-right: 3%;
     color:white;
+    @media screen and (min-width: $break-1600) {
+      font-size: 2.2rem;
+    }
     @media screen and (max-width: $break-415) {
     text-shadow: 0 0 2px black;
     }
@@ -549,47 +586,45 @@ ul{
 }
 
 #me {
-  background-image: url("../me.jpg");
-  background-size: 144%;
-  background-repeat: no-repeat;
-  padding-bottom: 5%;
-  border-radius: 10px;
-  @media screen and (max-width: $break-320){
+  background-image: url("../menew.jpg");
   background-size: cover;
-  }
-  @media screen and (min-width: 321px) and (max-width: $break-415) {
-  background-size: 230%;
-  margin-top: -6%;
-  background-position-x: -200px;
-  }
-  @media screen and (min-width: $break-1440) {
-  padding-bottom: 4%;
-  }
-  @media screen and (min-width: $break-1600) {
-  padding-bottom: 3%;
-  }
-  @media screen and (min-width: $break-1920) {
-    background-size: 100%;
-    padding-bottom:2.5%;
-  }
+  background-repeat: no-repeat;
+  padding-bottom: 9.5%;
+  border-radius: 10px;
+  // @media screen and (min-width: 321px) and (max-width: $break-415) {
+  // background-size: 230%;
+  // margin-top: -6%;
+  // background-position-x: -200px;
+  // }
+  // @media screen and (min-width: $break-1440) {
+  // padding-bottom: 4%;
+  // }
+  // @media screen and (min-width: $break-1600) {
+  // padding-bottom: 3%;
+  // }
+  // @media screen and (min-width: $break-1920) {
+  //   background-size: 100%;
+  //   padding-bottom:2.5%;
+  // }
   h1{
     font-family: $font-header;
     text-align: right;
     padding-right: 3%;
-    color: black;
-    @media screen and (max-width: $break-360) {
-    color:white;
-    }
+    color: white;
+    margin:0;
+    font-size: 4rem;
   }
   p{
     font-family: $font-header;
     font-size: 1.8rem;
     padding-right: 3%;
-    color:black;
+    color:white;
     text-align: center;
     @media screen and (max-width: $break-360) {
-    color:white;
     font-size:1.3rem;
+    }
+    @media screen and (min-width: $break-1600) {
+      font-size: 2.2rem;
     }
   }
 }
