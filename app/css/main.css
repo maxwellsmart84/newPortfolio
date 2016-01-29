@@ -21,10 +21,10 @@ ul {
     padding: 2%;
     text-align: center;
     padding: 10%; }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-device-width: 1600px) {
       .headerBar i {
         padding: 38% 10%; } }
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-device-width: 1920px) {
       .headerBar i {
         padding: 58% 10%; } }
 
@@ -41,41 +41,41 @@ ul {
     font-family: "Raleway", sans-serif;
     margin-top: 0;
     position: relative; }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       #headerInit .initials {
         font-size: 9em; } }
-    @media screen and (max-width: 1600px) {
+    @media screen and (min-device-width: 1600px) {
       #headerInit .initials {
         font-size: 15em; } }
-    @media screen and (max-width: 1440px) {
+    @media screen and (min-device-width: 1281px) and (max-device-width: 1440px) {
       #headerInit .initials {
         font-size: 14em; } }
-    @media screen and (max-width: 1920px) {
+    @media screen and (min-device-width: 1920px) {
       #headerInit .initials {
         font-size: 15em; } }
 
 #allCarousels {
   z-index: 1;
   margin-top: -55%; }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-device-width: 360px) {
     #allCarousels {
       margin-top: -130%; } }
-  @media screen and (min-width: 361px) and (max-width: 415px) {
+  @media screen and (min-device-width: 361px) and (max-device-width: 415px) {
     #allCarousels {
       margin-top: -100%; } }
-  @media screen and (min-width: 416px) and (max-width: 1024px) {
+  @media screen and (min-device-width: 416px) and (max-device-width: 1024px) {
     #allCarousels {
       margin-top: -62%; } }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-device-width: 1440px) {
     #allCarousels {
       margin-top: -47%; } }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-device-width: 1600px) {
     #allCarousels {
       margin-top: -44%; } }
-  @media screen and (min-width: 1680px) {
+  @media screen and (min-device-width: 1680px) {
     #allCarousels {
       margin-top: -41%; } }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     #allCarousels {
       margin-top: -37%; } }
 
@@ -88,13 +88,13 @@ ul {
   height: 300px;
   border-radius: 20px;
   margin-bottom: 1%; }
-  @media screen and (max-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     .section {
       height: 370px; } }
-  @media screen and (max-width: 1600px) {
+  @media screen and (min-device-width: 1600px) {
     .section {
       height: 360px; } }
-  @media screen and (max-width: 1440px) {
+  @media screen and (min-device-width: 1281px) and (max-device-width: 1440px) {
     .section {
       height: 325px; } }
 
@@ -113,10 +113,10 @@ ul {
   font-family: "Raleway", sans-serif;
   color: white;
   padding-top: 40px; }
-  @media screen and (min-width: 321px) and (max-width: 415px) {
+  @media screen and (min-device-width: 321px) and (max-device-width: 415px) {
     .slideTitle {
       font-size: 6rem; } }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-device-width: 320px) {
     .slideTitle {
       font-size: 5rem; } }
 
@@ -140,7 +140,7 @@ h2 {
   color: white; }
   .expCols ul {
     font-size: 1.5rem; }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       .expCols ul {
         display: none; } }
 
@@ -159,13 +159,13 @@ h2 {
 
 #col1Crowd {
   padding-bottom: 7%; }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     #col1Crowd {
       padding-bottom: 9.5%; } }
 
 #col2Crowd {
   padding-bottom: 7%; }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     #col2Crowd {
       padding-bottom: 8.5%; } }
 
@@ -175,19 +175,19 @@ h2 {
 
 #col1Photo {
   padding-bottom: 15%; }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-device-width: 1600px) {
     #col1Photo {
       padding-bottom: 12%; } }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     #col1Photo {
       padding-bottom: 11%; } }
 
 #col2Photo {
   padding-bottom: 10%; }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-device-width: 1600px) {
     #col2Photo {
       padding-bottom: 12%; } }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     #col2Photo {
       padding-bottom: 9.5%; } }
 
@@ -196,15 +196,15 @@ h2 {
 
 #col2Bucket {
   padding-bottom: 5%; }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     #col2Bucket {
       padding-bottom: 7.5%; } }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-device-width: 1920px) {
   #col1Schin {
     padding-bottom: 7.5%; } }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-device-width: 1920px) {
   #col2Schin {
     padding-bottom: 6%; } }
 
@@ -214,19 +214,19 @@ h2 {
   .projCols img {
     width: 37%;
     padding-top: 2%; }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       .projCols img {
         display: none; } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-device-width: 1440px) {
       .projCols img {
         padding-top: 0; } }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-device-width: 1600px) {
       .projCols img {
         width: 32%; } }
-    @media screen and (min-width: 1680px) {
+    @media screen and (min-device-width: 1680px) {
       .projCols img {
         width: 28%; } }
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-device-width: 1920px) {
       .projCols img {
         width: 24%; } }
   .projCols .projTitle {
@@ -237,30 +237,30 @@ h2 {
     display: inline-block;
     padding-bottom: 3%;
     margin: 0; }
-    @media screen and (min-width: 415px) and (max-width: 1024px) {
+    @media screen and (min-device-width: 415px) and (max-device-width: 1024px) {
       .projCols .projTitle {
         top: -2px; } }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       .projCols .projTitle {
         display: none; } }
   .projCols i {
     color: white;
     display: inline-block;
     padding-left: 8%; }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       .projCols i {
         text-align: center;
         display: block; } }
   .projCols ul {
     font-size: 1.1em;
     float: bottom; }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       .projCols ul {
         display: none; } }
   .projCols h3 {
     font-size: 1em;
     text-align: center; }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       .projCols h3 {
         display: none; } }
 
@@ -269,10 +269,10 @@ h2 {
   font-style: "Fugaz One", cursive; }
   .projLink:hover {
     cursor: pointer; }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     .projLink {
       font-size: 3rem; } }
-  @media screen and (min-width: 415px) and (max-width: 1024px) {
+  @media screen and (min-device-width: 415px) and (max-device-width: 1024px) {
     .projLink {
       font-size: 1.5rem; } }
 
@@ -305,16 +305,16 @@ h2 {
   display: inline-block;
   background-repeat: no-repeat;
   padding-left: 1%; }
-  @media screen and (max-width: 415px) {
+  @media screen and (max-device-width: 415px) {
     #chicago {
       display: inline-block;
       height: 230px;
       margin-right: 1%;
       padding: 6%; } }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-device-width: 360px) {
     #chicago {
       padding-top: 11%; } }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-device-width: 320px) {
     #chicago {
       bottom: 90px;
       height: 200px;
@@ -322,19 +322,19 @@ h2 {
   #chicago h1 {
     font-family: "Raleway", sans-serif;
     text-align: center; }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-device-width: 320px) {
       #chicago h1 {
         font-size: 2rem; } }
   #chicago p {
     font-size: 1.8rem;
     text-align: center; }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       #chicago p {
         font-size: 1.3rem; } }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-device-width: 320px) {
       #chicago p {
         font-size: 1.2rem; } }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-device-width: 1600px) {
       #chicago p {
         font-size: 2.2rem; } }
 
@@ -343,18 +343,18 @@ h2 {
   padding-bottom: 10%;
   border-radius: 10px;
   width: 45%;
-  max-width: 45%;
+  max-device-width: 45%;
   color: white;
   margin-left: 4%;
   overflow: hidden;
   display: inline-block;
   background-repeat: no-repeat; }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-device-width: 320px) {
     #charleston {
       display: inline-block;
       height: 200px;
       margin-left: 1%; } }
-  @media screen and (min-width: 321px) and (max-width: 415px) {
+  @media screen and (min-device-width: 321px) and (max-device-width: 415px) {
     #charleston {
       display: inline-block;
       height: 230px;
@@ -362,7 +362,7 @@ h2 {
   #charleston h1 {
     font-family: "Raleway", sans-serif;
     text-align: center; }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-device-width: 320px) {
       #charleston h1 {
         font-size: 2rem;
         position: relative;
@@ -370,15 +370,15 @@ h2 {
   #charleston p {
     font-size: 1.8rem;
     text-align: center; }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       #charleston p {
         font-size: 1.3rem; } }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-device-width: 320px) {
       #charleston p {
         font-size: 1.2rem;
         position: relative;
         bottom: 20px; } }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-device-width: 1600px) {
       #charleston p {
         font-size: 2.2rem; } }
 
@@ -388,7 +388,7 @@ h2 {
   padding-bottom: 12%;
   border-radius: 10px;
   background-position: center; }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-device-width: 1600px) {
     #ashley {
       padding-bottom: 13%; } }
   #ashley h1 {
@@ -399,7 +399,7 @@ h2 {
     font-size: 1.8rem;
     text-align: right;
     padding-right: 3%; }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-device-width: 1600px) {
     #ashley {
       font-size: 2.2rem; } }
 
@@ -410,18 +410,18 @@ h2 {
   background-repeat: no-repeat;
   background-position: 0 17%;
   border-radius: 10px; }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-device-width: 360px) {
     #bearPear {
       margin-top: -6%;
       padding-bottom: 25%; } }
-  @media screen and (min-width: 361px) and (max-width: 415px) {
+  @media screen and (min-device-width: 361px) and (max-device-width: 415px) {
     #bearPear {
       margin-top: -6%;
       padding-bottom: 40%; } }
-  @media screen and (min-width: 416px) and (max-width: 1024px) {
+  @media screen and (min-device-width: 416px) and (max-device-width: 1024px) {
     #bearPear {
       padding-bottom: 15%; } }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-device-width: 1600px) {
     #bearPear {
       padding-bottom: 12.5%; } }
   #bearPear h1 {
@@ -429,10 +429,10 @@ h2 {
     text-align: right;
     padding-right: 3%;
     color: white; }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       #bearPear h1 {
         text-shadow: 0 0 2px black; } }
-    @media screen and (min-width: 415px) and (max-width: 1024px) {
+    @media screen and (min-device-width: 415px) and (max-device-width: 1024px) {
       #bearPear h1 {
         font-size: 2.2em;
         padding-right: 2%; } }
@@ -441,13 +441,13 @@ h2 {
     text-align: right;
     padding-right: 3%;
     color: white; }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-device-width: 1600px) {
       #bearPear p {
         font-size: 2.2rem; } }
-    @media screen and (max-width: 415px) {
+    @media screen and (max-device-width: 415px) {
       #bearPear p {
         text-shadow: 0 0 2px black; } }
-    @media screen and (min-width: 415px) and (max-width: 1024px) {
+    @media screen and (min-device-width: 415px) and (max-device-width: 1024px) {
       #bearPear p {
         padding: 0; } }
 
@@ -470,10 +470,10 @@ h2 {
     padding-right: 3%;
     color: white;
     text-align: center; }
-    @media screen and (max-width: 360px) {
+    @media screen and (max-device-width: 360px) {
       #me p {
         font-size: 1.3rem; } }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-device-width: 1600px) {
       #me p {
         font-size: 2.2rem; } }
 
@@ -488,52 +488,52 @@ h2 {
 #max {
   margin-top: -3.7%;
   margin-bottom: 3%; }
-  @media screen and (min-width: 415px) and (max-width: 1024px) {
+  @media screen and (min-device-width: 415px) and (max-device-width: 1024px) {
     #max {
       margin-top: -10%; } }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-device-width: 1440px) {
     #max {
       margin-left: 15%; } }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-device-width: 1600px) {
     #max {
       margin-top: -3%; } }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     #max {
       margin-top: -2.5%;
       margin-left: 11%; } }
 
 #lyle {
   margin-top: 7.8%; }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-device-width: 1440px) {
     #lyle {
       margin-top: 7%; } }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-device-width: 1600px) {
     #lyle {
       margin-top: 7%;
       margin-left: 13%; } }
-  @media screen and (min-width: 1680px) {
+  @media screen and (min-device-width: 1680px) {
     #lyle {
       margin-top: 6%;
       margin-left: 13%; } }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     #lyle {
       margin-left: 10.5%;
       margin-top: 5%; } }
 
 #krause {
   margin-top: 9%; }
-  @media screen and (min-width: 415px) and (max-width: 1024px) {
+  @media screen and (min-device-width: 415px) and (max-device-width: 1024px) {
     #krause {
       margin-top: 12.5%; } }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-device-width: 1440px) {
     #krause {
       margin-top: 8%;
       margin-left: 13.5%; } }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-device-width: 1600px) {
     #krause {
       margin-top: 7%;
       margin-left: 13.5%; } }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-device-width: 1920px) {
     #krause {
       margin-top: 6.1%;
       margin-left: 10.5%; } }
