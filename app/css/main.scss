@@ -44,10 +44,10 @@ ul{
     padding:2%;
     text-align: center;
     padding: 10%;
-    @media screen and (min-device-width: $break-1600) {
+    @media screen and (min-width:$break-1600) {
       padding: 38% 10%;
     }
-    @media screen and (min-device-width: $break-1920) {
+    @media screen and (min-width:$break-1920) {
       padding: 58% 10%;
     }
   }
@@ -67,16 +67,16 @@ ul{
     font-family: $font-header;
     margin-top: 0;
     position:relative;
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
     font-size: 9em;
     }
-    @media screen and (min-device-width: $break-1600) {
-    font-size: 15em;
-    }
-    @media screen and (min-device-width: 1281px) and (max-device-width: $break-1440) {
+    @media screen and (min-width:$break-1440) {
     font-size:14em;
     }
-    @media screen and (min-device-width: $break-1920) {
+    @media screen and (min-width:$break-1600) {
+    font-size: 15em;
+    }
+    @media screen and (min-width:$break-1920) {
     font-size: 15em;
     }
   }
@@ -85,25 +85,25 @@ ul{
 #allCarousels{
   z-index:1;
   margin-top: -55%;
-  @media screen and (max-device-width: $break-360) {
+  @media screen and (max-width:$break-360) {
   margin-top: -130%;
   }
-  @media screen and (min-device-width: 361px) and (max-device-width: $break-415) {
+  @media screen and (min-width:361px) and (max-width:$break-415) {
   margin-top: -100%;
   }
-  @media screen and (min-device-width: 416px) and (max-device-width: $break-1024) {
+  @media screen and (min-width:416px) and (max-width:$break-1024) {
   margin-top: -62%;
   }
-  @media screen and (min-device-width: $break-1440) {
+  @media screen and (min-width:$break-1440) {
   margin-top: -47%;
   }
-  @media screen and (min-device-width: $break-1600) {
+  @media screen and (min-width:$break-1600) {
   margin-top: -44%;
   }
-  @media screen and (min-device-width: $break-1680) {
+  @media screen and (min-width:$break-1680) {
     margin-top: -41%;
   }
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
   margin-top: -37%;
   }
 }
@@ -116,16 +116,16 @@ ul{
   height:300px;
   border-radius: 20px;
   margin-bottom: 1%;
-  @media screen and (min-device-width: $break-1920) {
-  height:370px;
-  }
-  @media screen and (min-device-width: $break-1600) {
-  height:360px;
-  }
-  @media screen and (min-device-width: 1281px) and (max-device-width: $break-1440) {
+  @media screen and (min-width:$break-1440) {
   height:325px;
   }
-  // @media screen and (max-device-width: $break-415) {
+  @media screen and (min-width:$break-1600) {
+  height:360px;
+  }
+  @media screen and (min-width:$break-1920) {
+  height:370px;
+  }
+  // @media screen and (max-width:$break-415) {
   // margin-left: 2%;
   // }
 }
@@ -148,10 +148,10 @@ ul{
   font-family: $font-header;
   color:white;
   padding-top: 40px;
-  @media screen and (min-device-width: 321px) and (max-device-width: $break-415) {
+  @media screen and (min-width:321px) and (max-width:$break-415) {
   font-size: 6rem;
   }
-  @media screen and (max-device-width: $break-320) {
+  @media screen and (max-width:$break-320) {
   font-size: 5rem;
   }
 }
@@ -180,7 +180,7 @@ ul{
   color:white;
   ul {
     font-size: 1.5rem;
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
     display: none;
     }
   }
@@ -208,14 +208,14 @@ ul{
 
 #col1Crowd {
   padding-bottom: 7%;
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
   padding-bottom: 9.5%;
   }
 }
 
 #col2Crowd {
   padding-bottom: 7%;
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
     padding-bottom: 8.5%;
   }
 }
@@ -226,20 +226,20 @@ ul{
 
 #col1Photo {
   padding-bottom: 15%;
-  @media screen and (min-device-width: $break-1600) {
+  @media screen and (min-width:$break-1600) {
   padding-bottom: 12%;
   }
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
   padding-bottom: 11%;
   }
 }
 
 #col2Photo {
   padding-bottom: 10%;
-  @media screen and (min-device-width: $break-1600) {
+  @media screen and (min-width:$break-1600) {
   padding-bottom: 12%;
   }
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
   padding-bottom: 9.5%;
   }
 }
@@ -250,17 +250,17 @@ ul{
 
 #col2Bucket {
   padding-bottom: 5%;
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
   padding-bottom: 7.5%;
   }
 }
 #col1Schin {
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
   padding-bottom: 7.5%;
   }
 }
 #col2Schin {
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
     padding-bottom: 6%;
   }
 }
@@ -271,19 +271,19 @@ ul{
   img{
     width:37%;
     padding-top: 2%;
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
     display: none;
     }
-    @media screen and (min-device-width: $break-1440) {
+    @media screen and (min-width:$break-1440) {
     padding-top:0;
     }
-    @media screen and (min-device-width: $break-1600) {
+    @media screen and (min-width:$break-1600) {
       width:32%;
     }
-    @media screen and (min-device-width: $break-1680) {
+    @media screen and (min-width:$break-1680) {
     width:28%;
     }
-    @media screen and (min-device-width: $break-1920) {
+    @media screen and (min-width:$break-1920) {
     width: 24%;
   }
 }
@@ -295,10 +295,10 @@ ul{
     display: inline-block;
     padding-bottom: 3%;
     margin:0;
-    @media screen and (min-device-width: $break-415) and (max-device-width: $break-1024) {
+    @media screen and (min-width:$break-415) and (max-width:$break-1024) {
     top: -2px;
     }
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
     display: none;
     }
   }
@@ -306,7 +306,7 @@ ul{
     color:white;
     display:inline-block;
     padding-left: 8%;
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
       text-align: center;
       display:block;
     }
@@ -314,14 +314,14 @@ ul{
   ul {
     font-size: 1.1em;
     float:bottom;
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
     display: none;
     }
   }
   h3 {
     font-size: 1em;
     text-align: center;
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
     display: none;
     }
   }
@@ -332,10 +332,10 @@ ul{
     &:hover{
       cursor: pointer;
     }
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
     font-size: 3rem;
   }
-  @media screen and (min-device-width: $break-415) and (max-device-width: $break-1024) {
+  @media screen and (min-width:$break-415) and (max-width:$break-1024) {
     font-size: 1.5rem;
   }
 }
@@ -346,13 +346,13 @@ ul{
   &:hover {
     cursor: pointer;
   }
-  // @media screen and (min-device-width: $break-1920) {
+  // @media screen and (min-width:$break-1920) {
   // font-size: 3rem;
   // }
-  // @media screen and (min-device-width: $break-415) and (max-device-width: $break-1024) {
+  // @media screen and (min-width:$break-415) and (max-width:$break-1024) {
   // font-size: 1.5rem;
   // }
-  // @media screen and (max-device-width: $break-415) {
+  // @media screen and (max-width:$break-415) {
   // display: none;
   // }
 }
@@ -383,22 +383,22 @@ ul{
   display: inline-block;
   background-repeat: no-repeat;
   padding-left: 1%;
-  // @media screen and (min-device-width: $break-1440) {
+  // @media screen and (min-width:$break-1440) {
   // padding-bottom: 8%;
   // }
-  // @media screen and (min-device-width: $break-1600) {
+  // @media screen and (min-width:$break-1600) {
   // padding-bottom: 7%;
   // }
-  @media screen and (max-device-width: $break-415) {
+  @media screen and (max-width:$break-415) {
     display: inline-block;
     height: 230px;
     margin-right: 1%;
     padding:6%
   }
-  @media screen and (max-device-width: $break-360) {
+  @media screen and (max-width:$break-360) {
   padding-top:11%;
   }
-  @media screen and (max-device-width: $break-320){
+  @media screen and (max-width:$break-320){
     bottom: 90px;
     height: 200px;
     padding: 0;
@@ -407,20 +407,20 @@ ul{
   h1 {
     font-family: $font-header;
     text-align: center;
-    @media screen and (max-device-width: $break-320){
+    @media screen and (max-width:$break-320){
       font-size: 2rem
       }
     }
   p {
     font-size: 1.8rem;
     text-align: center;
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
       font-size: 1.3rem
     }
-    @media screen and (max-device-width: $break-320){
+    @media screen and (max-width:$break-320){
       font-size: 1.2rem;
     }
-    @media screen and (min-device-width: $break-1600) {
+    @media screen and (min-width:$break-1600) {
       font-size: 2.2rem;
     }
   }
@@ -430,38 +430,38 @@ ul{
   padding-bottom: 10%;
   border-radius: 10px;
   width:45%;
-  max-device-width: 45%;
+  max-width:45%;
   color:white;
   margin-left: 4%;
   overflow: hidden;
   display: inline-block;
   background-repeat: no-repeat;
-  @media screen and (max-device-width: $break-320){
+  @media screen and (max-width:$break-320){
     display: inline-block;
     height:200px;
     margin-left: 1%;
     }
-  @media screen and (min-device-width: 321px) and (max-device-width: $break-415) {
+  @media screen and (min-width:321px) and (max-width:$break-415) {
   display: inline-block;
   height:230px;
   margin-left: 1%;
   }
-  // @media screen and (min-device-width: 416px) and (max-device-width: $break-1024) {
+  // @media screen and (min-width:416px) and (max-width:$break-1024) {
   // padding-bottom: 7%;
   // }
-  // @media screen and (min-device-width: $break-1440) {
+  // @media screen and (min-width:$break-1440) {
   //   padding-bottom: 8%;
   // }
-  // @media screen and (min-device-width: $break-1600) {
+  // @media screen and (min-width:$break-1600) {
   //   padding-bottom: 7%;
   // }
-  // @media screen and (min-device-width: $break-1920) {
+  // @media screen and (min-width:$break-1920) {
   //   padding-bottom: 5.4%;
   // }
   h1{
     font-family: $font-header;
     text-align: center;
-    @media screen and (max-device-width: $break-320){
+    @media screen and (max-width:$break-320){
     font-size: 2rem;
     position: relative;
     bottom: 20px;
@@ -470,15 +470,15 @@ ul{
   p {
     font-size: 1.8rem;
     text-align: center;
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
     font-size: 1.3rem;
     }
-    @media screen and (max-device-width: $break-320){
+    @media screen and (max-width:$break-320){
       font-size: 1.2rem;
       position: relative;
       bottom: 20px;
     }
-    @media screen and (min-device-width: $break-1600) {
+    @media screen and (min-width:$break-1600) {
       font-size: 2.2rem;
     }
   }
@@ -490,27 +490,26 @@ ul{
   padding-bottom: 12%;
   border-radius: 10px;
   background-position: center;
-  // @media screen and (max-device-width: $break-320){
+  // @media screen and (max-width:$break-320){
   // padding-bottom: 17%;
   // margin-top:-5%;
   // }
-  // @media screen and (min-device-width: 321px) and (max-device-width: $break-415) {
+  // @media screen and (min-width:321px) and (max-width:$break-415) {
   // padding-bottom: 22%;
   // margin-top:-5%;
   // }
-  // @media screen and (min-device-width: $break-415) and (max-device-width: $break-1024) {
+  // @media screen and (min-width:$break-415) and (max-width:$break-1024) {
   // padding-bottom: 15%;
   // }
-  // @media screen and (min-device-width: $break-1440) {
+  // @media screen and (min-width:$break-1440) {
   // padding-bottom: 11%;
   // }
-  @media screen and (min-device-width: $break-1600) {
+  @media screen and (min-width:$break-1600) {
   padding-bottom: 13%;
   }
-  // @media screen and (min-device-width: $break-1920) {
-  // padding-bottom: 7.5%;
-  // background-position: 0 55%;
-  // }
+  @media screen and (min-width:$break-1920) {
+  padding-bottom: 12%;
+  }
   h1{
     font-family: $font-header;
     text-align: right;
@@ -521,7 +520,7 @@ ul{
     text-align: right;
     padding-right: 3%;
   }
-  @media screen and (min-device-width: $break-1600) {
+  @media screen and (min-width:$break-1600) {
     font-size: 2.2rem;
   }
 }
@@ -533,24 +532,24 @@ ul{
   background-repeat: no-repeat;
   background-position: 0 17%;
   border-radius: 10px;
-  @media screen and (max-device-width: $break-360) {
+  @media screen and (max-width:$break-360) {
     margin-top: -6%;
     padding-bottom: 25%;
   }
-  @media screen and (min-device-width:361px) and (max-device-width: $break-415) {
+  @media screen and (min-device-width:361px) and (max-width:$break-415) {
   margin-top: -6%;
   padding-bottom: 40%;
   }
-  @media screen and (min-device-width: 416px) and (max-device-width: $break-1024) {
+  @media screen and (min-width:416px) and (max-width:$break-1024) {
   padding-bottom: 15%;
   }
-  // @media screen and (min-device-width: $break-1440) {
+  // @media screen and (min-width:$break-1440) {
   // padding-bottom: 11%;
   // }
-  @media screen and (min-device-width: $break-1600) {
-  padding-bottom: 12.5%;
+  @media screen and (min-width:$break-1600) {
+  padding-bottom: 12%;
   }
-  // @media screen and (min-device-width: $break-1920) {
+  // @media screen and (min-width:$break-1920) {
   //   background-size: 50%;
   //   padding-bottom: 7.5%;
   // }
@@ -560,10 +559,10 @@ ul{
     text-align: right;
     padding-right: 3%;
     color: white;
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
       text-shadow: 0 0 2px black;
     }
-    @media screen and (min-device-width: $break-415) and (max-device-width: $break-1024) {
+    @media screen and (min-width:$break-415) and (max-width:$break-1024) {
       font-size: 2.2em;
       padding-right: 2%;
     }
@@ -573,13 +572,13 @@ ul{
     text-align: right;
     padding-right: 3%;
     color:white;
-    @media screen and (min-device-width: $break-1600) {
+    @media screen and (min-width:$break-1600) {
       font-size: 2.2rem;
     }
-    @media screen and (max-device-width: $break-415) {
+    @media screen and (max-width:$break-415) {
     text-shadow: 0 0 2px black;
     }
-    @media screen and (min-device-width: $break-415) and (max-device-width: $break-1024) {
+    @media screen and (min-width:$break-415) and (max-width:$break-1024) {
       padding:0;
     }
   }
@@ -591,18 +590,18 @@ ul{
   background-repeat: no-repeat;
   padding-bottom: 9.5%;
   border-radius: 10px;
-  // @media screen and (min-device-width: 321px) and (max-device-width: $break-415) {
+  // @media screen and (min-width:321px) and (max-width:$break-415) {
   // background-size: 230%;
   // margin-top: -6%;
   // background-position-x: -200px;
   // }
-  // @media screen and (min-device-width: $break-1440) {
+  // @media screen and (min-width:$break-1440) {
   // padding-bottom: 4%;
   // }
-  // @media screen and (min-device-width: $break-1600) {
+  // @media screen and (min-width:$break-1600) {
   // padding-bottom: 3%;
   // }
-  // @media screen and (min-device-width: $break-1920) {
+  // @media screen and (min-width:$break-1920) {
   //   background-size: 100%;
   //   padding-bottom:2.5%;
   // }
@@ -620,10 +619,10 @@ ul{
     padding-right: 3%;
     color:white;
     text-align: center;
-    @media screen and (max-device-width: $break-360) {
+    @media screen and (max-width:$break-360) {
     font-size:1.3rem;
     }
-    @media screen and (min-device-width: $break-1600) {
+    @media screen and (min-width:$break-1600) {
       font-size: 2.2rem;
     }
   }
@@ -642,53 +641,53 @@ ul{
 #max {
   margin-top: -3.7%;
   margin-bottom: 3%;
-  @media screen and (min-device-width: $break-415) and (max-device-width: $break-1024) {
+  @media screen and (min-width:$break-415) and (max-width:$break-1024) {
     margin-top: -10%;
   }
 
-  @media screen and (min-device-width: $break-1440) {
+  @media screen and (min-width:$break-1440) {
   margin-left:15%;
   }
-  @media screen and (min-device-width: $break-1600) {
+  @media screen and (min-width:$break-1600) {
     margin-top: -3%;
   }
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
   margin-top: -2.5%;
   margin-left: 11%;
   }
 }
 #lyle {
   margin-top:7.8%;
-  @media screen and (min-device-width: $break-1440) {
+  @media screen and (min-width:$break-1440) {
   margin-top:7%;
   }
-  @media screen and (min-device-width: $break-1600) {
+  @media screen and (min-width:$break-1600) {
     margin-top: 7%;
     margin-left: 13%;
   }
-  @media screen and (min-device-width: $break-1680) {
+  @media screen and (min-width:$break-1680) {
     margin-top: 6%;
     margin-left: 13%;
   }
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
     margin-left: 10.5%;
     margin-top: 5%;
   }
 }
 #krause {
   margin-top: 9%;
-  @media screen and (min-device-width: $break-415) and (max-device-width: $break-1024) {
+  @media screen and (min-width:$break-415) and (max-width:$break-1024) {
     margin-top: 12.5%;
   }
-  @media screen and (min-device-width: $break-1440) {
+  @media screen and (min-width:$break-1440) {
   margin-top: 8%;
   margin-left: 13.5%;
   }
-  @media screen and (min-device-width: $break-1600) {
+  @media screen and (min-width:$break-1600) {
     margin-top: 7%;
     margin-left: 13.5%;
   }
-  @media screen and (min-device-width: $break-1920) {
+  @media screen and (min-width:$break-1920) {
     margin-top: 6.1%;
     margin-left: 10.5%;
   }
